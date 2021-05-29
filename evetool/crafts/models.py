@@ -37,6 +37,7 @@ class Blueprint(models.Model):
     quantity_produced = models.IntegerField(null=True)
     invention_data = models.ManyToManyField("self", through="Invention", symmetrical=False)
     tech_2 = models.BooleanField(default=False)
+    reaction = models.BooleanField(default=False)
     time_prod = models.IntegerField(default=3600)
 
 
