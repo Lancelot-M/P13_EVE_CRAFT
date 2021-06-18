@@ -1,0 +1,70 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block Content %}
+    <div class="container-fluid my-5">
+        <h2 class="text-center text-success mb-3">{{ data.item_selected }}</h2>
+        <div class="row justify-content-around">
+            <div class="col-5 bg-warning text-center">
+                LISTE DES COMPOSANTS
+            </div>
+            <div class="col-5 bg-warning text-center">
+                COUT DES COMPOSANTS
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-5 border">    
+                {% for key, value in data.list_components.items %}
+                   <div>{{ key }} ===> {{ value|floatformat }} unités</div>
+                {% endfor %}
+            </div>
+            <div class="col-5">
+                <div class="row border">
+                    <div class="col">
+                        Valeur des composants cette semaine: {{ data.compo_value_week|floatformat }}<br>
+                        Valeur des composants ce mois: {{ data.compo_value_month|floatformat }}
+                    </div>
+                    <div class="col">
+                        Evolution prix cette semaine: {{ data.compo_progress_week|floatformat }}%<br>
+                        Evolution prix ce mois: {{ data.compo_progress_month|floatformat }}%
+                    </div>
+                </div>
+                <div class="row mt-2 bg-warning">
+                    <div class="col text-center">
+                        VALEUR PRODUIT
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        Valeur produit fini cette semaine: {{ data.product_value_week|floatformat }}<br>
+                        Valeur produit fini ce mois: {{ data.product_value_month|floatformat }}<br>
+                        Volume quotidient cette semaine: {{ data.product_volume_week|floatformat }}<br>
+                        Volume quotidient ce mois: {{ data.product_volume_month|floatformat }}
+                    </div>
+                    <div class="col">
+                        Evolution prix cette semaine: {{ data.product_progress_week|floatformat }}%<br>
+                        Evolution prix ce mois: {{ data.product_progress_month|floatformat }}%<br>
+                        Evolution volume cette semaine: {{ data.volume_progress_week|floatformat }}%<br>
+                        Evolution volume ce mois: {{ data.volume_progress_month|floatformat }}%
+                    </div>
+                </div>
+                <div class="row mt-2 bg-warning">
+                    <div class="col text-center">
+                        BENEF / PERTE
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        Bénéfice par jour cette semaine: {{ data.DAY_PROFIT_WEEK|floatformat }}<br>
+                        Bénéfice par jour ce mois: {{ data.DAY_PROFIT_MONTH|floatformat }}<br>
+                        Cycle par jour: {{ data.RUNS_DAY }}
+                    </div>
+                    <div class="col">
+                        Evolution bénéfice cette semaine: {{ data.DAY_PROFIT_WEEK_PROGRES|floatformat }}%<br>
+                        Evolution bénéfice ce mois: {{ data.DAY_PROFIT_MONTH_PROGRES|floatformat }}%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

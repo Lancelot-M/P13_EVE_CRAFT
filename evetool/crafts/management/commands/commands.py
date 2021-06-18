@@ -3,7 +3,7 @@ import json
 import yaml
 from crafts.models import Category, Group, Item, Blueprint, InputProduction, Invention, InputInvention
 from django.core.exceptions import ObjectDoesNotExist
-from config import PROTECTIVE_COMPONENTS, BASE_MATERIAL
+from config import PROTECTIVE_COMPONENTS, FROM_REACTION
 from django.db.models import Q
 
 class CreateDb():
@@ -309,9 +309,6 @@ class CreateDb():
     #                 composants[key] = value
     #     return composants
 
-
-# Job cost = Estimated items value × System cost index × Structure bonuses
-# Tax cost = Job cost × Tax%
 IS_TECH_2 = True
 ME = 0.91
 T2_ME = 0.98
@@ -319,147 +316,27 @@ T2_TE = 0.96
 PROD_STRUCTURE = 0.98
 REACTION_STRUCTURE = 0.98
 
+
 class Industry():
+
+    # Job cost = Estimated items value × System cost index × Structure bonuses
+    # Tax cost = Job cost × Tax%
+   
+    def __init__(self):
+        self.mode = "From_Raw"
+        self.fuel_prod = "No"
+        self.t1_ME = 1
+        self.t1_TE = 1
+        self.compo_bonus = 1
+        self.reaction_bonus = 1
+        self.t1_bonus = 1
+        self.t2_bonus = 1
+    
 
     def start_industry(self):
 
-        request = ["Capital Construction Components"]
-        benef_dict = {}
-        for element in request:
-            if element == "Protective":
-                for compo in PROTECTIVE_COMPONENTS:
-                    item = Item.objects.get(name=compo)
-                    benef = self.calcul_benef(item.name)
-                    benef_dict[item.name] = benef
-            else:
-                research = Item.objects.filter(group_belong__name=element)
-                for item in research:
-                    if item.name in PROTECTIVE_COMPONENTS:
-                        continue
-                    else:
-                        benef = self.calcul_benef(item.name)
-                        benef_dict[item.name] = benef
-            data = {k: v for k, v in sorted(benef_dict.items(), key=lambda item: item[1], reverse=False)}
-            for k, v in data.items():
-                print(k, v)
-
-        # PROD T2 CATEGORY --------------------
-        # Ship / Charge / Module / Drone / Fighter
-        # UTILISATEUR SELECTIONNE MODE FULL ITEM T2 SHIP 
-
-        # all_bp = Blueprint.objects.all()
-        # for bp in all_bp:
-        #     if bp.tech_2 == IS_TECH_2:
-        #         print(bp.name)
-
-        # ------------- LIST ALL ITEM 'FILTERED' BY BENEF ------------
-        # benef_dict = {}
-        # all_bp_t2 = Item.objects.filter(group_belong__category_belong__name="Ship")
-        # for bp in all_bp_t2:
-        #     try:
-        #         item = bp.result.get()
-        #         if item.tech_2:
-        #             benef = self.calcul_benef(bp.name)
-        #             benef_dict[bp.name] = benef
-        #     except ObjectDoesNotExist:
-        #         pass
-        # new = {k: v for k, v in sorted(benef_dict.items(), key=lambda item: item[1], reverse=True)}
-        # for k, v in new.items():
-        #     print(k, v)
-
-        # --------------- ESTIMATE COST PROD OF 'ITEM' SELECTECTED --------------
-        # self.actual_cost_prod("Raven")
-
-        # --------------- INDUSTRY DATA OF "ITEM" SELECTED -------------------
-        # self.calcul_benef("Raven")
-
-        # ------------- CHEK ALL ITEM OF A GROUP ----------------
-        # items = Item.objects.filter(group_belong__name="Hybrid Tech Components")
-        # for item in items:
-        #     print(item.name)
-
-        # ------------- CHECK THE GROUP OF A ITEM --------------------
-        # reaction = Item.objects.get(name="Electromechanical Interface Nexus")
-        # print(reaction.name)
-        # print(reaction.group_belong.name)
-        # print(reaction.group_belong.category_belong.name)
-
-    def calcul_benef(self, research):
-        # research = "Golem"
-        research_bp = Blueprint.objects.get(items_produced__name=research)
-        research_item = Item.objects.get(name=research)
-        
-        data = self.item_data(research_bp)
-        stats = self.data_industry(data, research_item, research_bp)
-        for key, val in stats.items():
-            print(key, val)
-        return stats["day_profit_week0"]
-
-    def data_industry(self, data, target, bp):
-
-        bp_run_day = 86400 / ( bp.time_prod * T2_TE )
-        week0 = 0
-        week1 = 0
-        month0 = 0
-        month1 = 0
-        day_profit_week0 = 0
-        day_profit_month0 = 0
-        week_progress = 0
-        month_progress = 0
-
-        try:
-            for key, value in data.items():
-                item = Item.objects.get(name=key)
-                price = float(item.week0_value) * float(value)
-                week0 += price
-                price = float(item.week1_value) * float(value)
-                week1 += price
-                price = float(item.month0_value) * float(value)
-                month0 += price
-                price = float(item.month1_value) * float(value)
-                month1 += price
-        except TypeError:
-            print("error in calcul with", key)
-
-        try:
-            week0_benef = float(target.week0_value) - week0
-            day_profit_week0 = ( week0_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            print("error with week0 value")
-
-        try:
-            week1_benef = float(target.week1_value) - week1
-            day_profit_week1 = ( week1_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            print("error with week1 value")
-
-        try:
-            month0_benef = float(target.month0_value) - month0
-            day_profit_month0 = ( month0_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            print("error with month0 value")
-
-        try:
-            month1_benef = float(target.month1_value) - month1
-            day_profit_month1 = ( month1_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            print("error with month1 value")
-        
-        try:
-            week_progress = ( ( day_profit_week0 * 100 ) / day_profit_week1 ) - 100
-            month_progress = ( (day_profit_month0 * 100 ) / day_profit_month1 ) - 100
-        except:
-            print("evolution error with", target.name)
-        
-
-        data_industry = {
-            "day_profit_week0": day_profit_week0,
-            "day_profit_month0": day_profit_month0,
-            "week_progress": week_progress,
-            "month_progress": month_progress
-        }
-        return data_industry
-
+        item = Item.objects.get(name="Vanguard")
+        item.delete()
 
     def actual_cost_prod(self, item):
 
@@ -476,24 +353,88 @@ class Industry():
         print("--- ITEM DETAIL ---")
         print("COST PROD: ", total)
 
+
+    def calcul_benef(self, research):
+
+        research_bp = Blueprint.objects.get(items_produced__name=research)
+        data = self.item_data(research_bp)
+        # stats = self.data_industry(data, research_bp)
+
+        product = research_bp.items_produced
+        bp_run_day = 86400 / ( research_bp.time_prod * T2_TE )
+        week0 = 0
+        week1 = 0
+        month0 = 0
+        month1 = 0
+
+        try:
+            for key, value in data.items():
+                item = Item.objects.get(name=key)
+                price = float(item.week0_value) * float(value)
+                week0 += price
+                price = float(item.week1_value) * float(value)
+                week1 += price
+                price = float(item.month0_value) * float(value)
+                month0 += price
+                price = float(item.month1_value) * float(value)
+                month1 += price
+        except TypeError:
+            # print("MARKET DATA ERROR")
+            pass
+        try:
+            week0_benef = float(product.week0_value) - week0
+            day_profit_week0 = ( week0_benef * research_bp.quantity_produced ) * bp_run_day
+        except TypeError:
+            day_profit_week0 = "ERROR WITH MARKET DATA"
+        try:
+            week1_benef = float(product.week1_value) - week1
+            day_profit_week1 = ( week1_benef * research_bp.quantity_produced ) * bp_run_day
+        except TypeError:
+            day_profit_week1 = "ERROR WITH MARKET DATA"
+            
+        try:
+            month0_benef = float(product.month0_value) - month0
+            day_profit_month0 = ( month0_benef * research_bp.quantity_produced ) * bp_run_day
+        except TypeError:
+            day_profit_month0 = "ERROR WITH MARKET DATA"           
+        try:
+            month1_benef = float(product.month1_value) - month1
+            day_profit_month1 = ( month1_benef * research_bp.quantity_produced ) * bp_run_day
+        except TypeError:
+            day_profit_month1 = "ERROR WITH MARKET DATA"  
+        if day_profit_week0 == "ERROR WITH MARKET DATA" or day_profit_week1 == "ERROR WITH MARKET DATA":
+            week_progress = "ERROR WITH MARKET DATA"
+        else:
+            week_progress = ( ( day_profit_week0 * 100 ) / day_profit_week1 ) - 100
+        if day_profit_month0 == "ERROR WITH MARKET DATA" or day_profit_month1 == "ERROR WITH MARKET DATA":
+            month_progress = "ERROR WITH MARKET DATA"
+        else:
+            month_progress = ( (day_profit_month0 * 100 ) / day_profit_month1 ) - 100
+        stats = {
+            "DAY_PROFIT_WEEK": day_profit_week0,
+            "DAY_PROFIT_MONTH": day_profit_month0,
+            "day_profit_week_progress": week_progress,
+            "day_profit_month_progress": month_progress,
+            "Ressources": data,
+            "COST_PROD": week0
+        }
+
+        # print("ITEM :", research)
+        # for key, val in data.items():
+        #     print(key, val)
+
+        return stats
+
+
     def item_data(self, bp):
         
         data = self.prod_data(bp)
-        while self.check_material_only(data) == False:
-            data = self.craft_detail(data)
-        return data
-
-    def invention_data(self, bp):
-        
-        # success_chance = BASE * ( 1 + ( Skill 1 + Skill 2 ) / 30 + Racial Skill / 40 ) * ( 1 + Decryptor / 100)
-        data = {}
-        bp_invention = Invention.objects.get(output_blueprint__name=bp.name)
-        chance = float(bp_invention.succes_rate) * ( 1 + ( 5 / 30 ) + 2 / 40 ) * ( 1 + 0 / 100 )
-        datacore = InputInvention.objects.filter(inventions=bp_invention)
-        for core in datacore:
-            #print(core.items.name, core.quantity, ">>>>", (core.quantity / chance))
-            data[core.items.name] = ( core.quantity / chance ) / bp.quantity_produced
-        return data
+        if self.mode == "From_Blueprint":
+            return data
+        else:
+            while self.check_material_only(data) == False:
+                data = self.craft_detail(data)
+            return data
 
     def prod_data(self, bp):
     
@@ -517,20 +458,35 @@ class Industry():
                 data[item.name] = ( composants.quantity * ME * PROD_STRUCTURE ) / bp.quantity_produced
         return data
 
-    def check_material_only(self, data):
+    def invention_data(self, bp):
+        
+        # success_chance = BASE * ( 1 + ( Skill 1 + Skill 2 ) / 30 + Racial Skill / 40 ) * ( 1 + Decryptor / 100)
+        data = {}
+        bp_invention = Invention.objects.get(output_blueprint__name=bp.name)
+        chance = float(bp_invention.succes_rate) * ( 1 + ( 5 / 30 ) + 2 / 40 ) * ( 1 + 0 / 100 )
+        datacore = InputInvention.objects.filter(inventions=bp_invention)
+        for core in datacore:
+            #print(core.items.name, core.quantity, ">>>>", (core.quantity / chance))
+            data[core.items.name] = ( core.quantity / chance ) / bp.quantity_produced
+        return data
 
-        # for key in data.keys():
-        #     item = Item.objects.get(name=key)
-        #     if item.group_belong.name in BASE_MATERIAL or item.group_belong.category_belong.name in BASE_MATERIAL:
-        #         pass
-        #     else:
-        #         return False
-        # return True
+
+    def check_material_only(self, data):
 
         for key in data.keys():
             item = Item.objects.get(name=key)
-            if item.group_belong.name in BASE_MATERIAL:
-                pass
+            if item.group_belong.name == "Fuel Block":
+                if self.fuel_prod == "No":
+                    continue  
+            if self.mode == "From_Reaction":
+                if item.group_belong.name in FROM_REACTION:
+                    pass
+                else:
+                    try:
+                        Blueprint.objects.get(items_produced__name=key)
+                        return False
+                    except ObjectDoesNotExist:
+                        pass
             else:
                 try:
                     Blueprint.objects.get(items_produced__name=key)
@@ -541,55 +497,30 @@ class Industry():
 
     def craft_detail(self, data):
 
-        # detail = {}
-        # for key, value in data.items():
-        #     item = Item.objects.get(name=key)
-        #     if item.group_belong.name in BASE_MATERIAL or item.group_belong.category_belong.name in BASE_MATERIAL:
-        #         if key in detail:
-        #             detail[key] = detail[key] + value
-        #         else:
-        #             detail[key] = value
-        #     else:
-        #         print(key)
-        #         bp = Blueprint.objects.get(items_produced__name=key)
-        #         craft = self.prod_data(bp)
-        #         for key2, value2 in craft.items():
-        #             if key2 in detail:
-        #                 detail[key2] = detail[key2] + value2 * value
-        #             else:
-        #                 detail[key2] = value2 * value
-        # return detail
-
         detail = {}
         for key, value in data.items():
-            # if item in XX group detail[key] = detail[key] + value:
-            #    Continue
             item = Item.objects.get(name=key)
-            if item.group_belong.name in BASE_MATERIAL:
+            try:
+                bp = Blueprint.objects.get(items_produced__name=key)
+                craft = self.prod_data(bp)
+                for key2, value2 in craft.items():
+                    if key2 in detail:
+                        detail[key2] = detail[key2] + value2 * value
+                    else:
+                        detail[key2] = value2 * value
+            except ObjectDoesNotExist:
                 if key in detail:
                     detail[key] = detail[key] + value
                 else:
                     detail[key] = value
-            else:
-                try:
-                    bp = Blueprint.objects.get(items_produced__name=key)
-                    craft = self.prod_data(bp)
-                    for key2, value2 in craft.items():
-                        if key2 in detail:
-                            detail[key2] = detail[key2] + value2 * value
-                        else:
-                            detail[key2] = value2 * value
-                except ObjectDoesNotExist:
-                    if key in detail:
-                        detail[key] = detail[key] + value
-                    else:
-                        detail[key] = value
         return detail
+
 
 
 class CallMarket():
 
     def main(self):
+        self.init_market_values()
         while self.call_status():
            self.init_market_values()
         call_failed = []
@@ -672,12 +603,14 @@ class CallMarket():
                         item.month1_value = market3["average"]
                         item.month1_quantity = market3["volume"]
                         item.save()
+                        print(item.name, "SAVED")
                         already_call.append(item.name)
                     except:
                         print("ERROR WITH >>>", item.name, "<<< REQUEST")
                 elif request.status_code == 400 or request.status_code == 404:
                     not_collable.append(item.name)
                 elif request.status_code == 504:
+                    print("failed_call", request.status_code)
                     failed_call.append(item.name)
                 else:
                     print("ERROR:", request.status_code, 'with :', item.name)
@@ -690,6 +623,8 @@ class CallMarket():
         with open("crafts/management/commands/items_call_failed.json", "w") as f:
             f.write(json.dumps(failed_call, indent=4, sort_keys=True,
                                ensure_ascii=False))
+        print("__________________")
+        print(failed_call)
 
 
 class DeleteData():

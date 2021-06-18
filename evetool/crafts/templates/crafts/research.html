@@ -1,0 +1,35 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block Content%}
+    {% if data %}
+    <table class="table" id="table_id">
+        <thead>
+            <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Benefices / Jour</th>
+                <th scope="col">Evolution</th>
+                <th scope="col">Benefices / Jour (Mensuel)</th>
+                <th scope="col">Evolution (Mensuel)</th>
+                <th scope="col">Volumes / Jour</th>
+                <th scope="col">Unités / Jour</th>
+                <th scope="col">Détail</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for key, value in data.items %}
+        <tr>
+            <th scope="row">{{ key }}</th>
+            <td>{{ value.DAY_PROFIT_WEEK|floatformat:"g" }}</td>
+            <td>{{ value.day_profit_week_progress|floatformat }}</td>
+            <td>{{ value.DAY_PROFIT_MONTH|floatformat }}</td>
+            <td>{{ value.day_profit_month_progress|floatformat }}</td>
+            <td>{{ value.volume }}</td>
+            <td>{{ value.runs_day|floatformat }}</td>
+            <td><button id="{{ key }}" type="submit" class="showinfo btn btn-primary">Show Info</button></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+{% endblock %}
