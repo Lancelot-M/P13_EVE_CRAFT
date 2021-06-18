@@ -192,7 +192,7 @@ class Services():
         info = {
             "DAY_PROFIT_WEEK": day_profit_week0,
             "DAY_PROFIT_MONTH": day_profit_month0,
-            "DAY_PROFIT_WEEK_PROGESS": week_progress,
+            "DAY_PROFIT_WEEK_PROGRESS": week_progress,
             "DAY_PROFIT_MONTH_PROGRESS": month_progress,
             "VOLUME": product.month0_quantity,
             "RUNS_DAY": bp_run_day * bp.quantity_produced,

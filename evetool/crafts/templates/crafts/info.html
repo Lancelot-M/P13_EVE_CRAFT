@@ -21,11 +21,11 @@
             <div class="col-5">
                 <div class="row border">
                     <div class="col">
-                        Valeur des composants cette semaine: {{ data.compo_value_week|floatformat }}<br>
+                        Valeur des composants cette semaine: <b>{{ data.compo_value_week|floatformat }}</b><br>
                         Valeur des composants ce mois: {{ data.compo_value_month|floatformat }}
                     </div>
                     <div class="col">
-                        Evolution prix cette semaine: {{ data.compo_progress_week|floatformat }}%<br>
+                        Evolution prix cette semaine: <b>{{ data.compo_progress_week|floatformat }}%</b><br>
                         Evolution prix ce mois: {{ data.compo_progress_month|floatformat }}%
                     </div>
                 </div>
@@ -36,13 +36,13 @@
                 </div>
                 <div class="row border">
                     <div class="col">
-                        Valeur produit fini cette semaine: {{ data.product_value_week|floatformat }}<br>
+                        Valeur produit fini cette semaine: <b>{{ data.product_value_week|floatformat }}</b><br>
                         Valeur produit fini ce mois: {{ data.product_value_month|floatformat }}<br>
                         Volume quotidient cette semaine: {{ data.product_volume_week|floatformat }}<br>
                         Volume quotidient ce mois: {{ data.product_volume_month|floatformat }}
                     </div>
                     <div class="col">
-                        Evolution prix cette semaine: {{ data.product_progress_week|floatformat }}%<br>
+                        Evolution prix cette semaine: <b>{{ data.product_progress_week|floatformat }}%</b><br>
                         Evolution prix ce mois: {{ data.product_progress_month|floatformat }}%<br>
                         Evolution volume cette semaine: {{ data.volume_progress_week|floatformat }}%<br>
                         Evolution volume ce mois: {{ data.volume_progress_month|floatformat }}%
@@ -55,13 +55,13 @@
                 </div>
                 <div class="row border">
                     <div class="col">
-                        Bénéfice par jour cette semaine: {{ data.DAY_PROFIT_WEEK|floatformat }}<br>
+                        Bénéfice par jour cette semaine: <b>{{ data.DAY_PROFIT_WEEK|floatformat }}</b><br>
                         Bénéfice par jour ce mois: {{ data.DAY_PROFIT_MONTH|floatformat }}<br>
                         Cycle par jour: {{ data.RUNS_DAY }}
                     </div>
                     <div class="col">
-                        Evolution bénéfice cette semaine: {{ data.DAY_PROFIT_WEEK_PROGRES|floatformat }}%<br>
-                        Evolution bénéfice ce mois: {{ data.DAY_PROFIT_MONTH_PROGRES|floatformat }}%
+                        Evolution bénéfice cette semaine: <b>{{ data.DAY_PROFIT_WEEK_PROGRESS|floatformat }}%</b><br>
+                        Evolution bénéfice ce mois: {{ data.DAY_PROFIT_MONTH_PROGRESS|floatformat }}%
                     </div>
                 </div>
             </div>
