@@ -27,13 +27,13 @@ $(document).ready(function() {
                 form: f,
             },
             success: function( data ){
-                document.write(data);
+                var winref = window.open();
+                winref.document.write(data)
             }
         });
     });
 });
 
 $(document).ready( function () {
-
     $('#table_id').DataTable();
 });

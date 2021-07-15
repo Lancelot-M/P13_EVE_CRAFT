@@ -1,47 +1,46 @@
 from crafts.models import Category, Group, Item, Blueprint, InputProduction, Invention, InputInvention
 from django.core.exceptions import ObjectDoesNotExist
-from config import PROTECTIVE_COMPONENTS, FROM_REACTION, TRIGLAVAN_COMPONENTS, CAPITAUX, SUBCAP
+from crafts.calculator import Calculator
+from config import PROTECTIVE_COMPONENTS, FROM_REACTION, TRIGLAVAN_COMPONENTS, CAPITAUX, SUBCAP, COST_INDEX, DECRYPTORS_LIST
 
 class Services():
 
     def make_list(self, form):
+        """main function for home view"""
         
         self.data = form.cleaned_data
-        self.t2_ME = 0.98
-        self.t2_TE = 0.96
-        self.cost_index = 1.015
+        self.industry_dict = {}
+        self.read_components()
+        self.read_reaction()
+        self.read_items()
+        return self.industry_dict
 
-        industry_dict = {}
+    def read_components(self):
+        """list all components selected items"""
 
         for component in self.data["composant"]:
             if component == "Protective":
                 for compo in PROTECTIVE_COMPONENTS:
                     item = Item.objects.get(name=compo)
-                    print(item.name)
-                    stats = self.calcul_benef(item.name)
-                    if stats["DAY_PROFIT_WEEK"] == "ERROR WITH MARKET DATA":
-                        continue
-                    industry_dict[item.name] = stats
+                    self.get_stats(item.name)
             else:
                 items = Item.objects.filter(group_belong__name=component)
                 for item in items:
                     if item.name in PROTECTIVE_COMPONENTS or item.name in TRIGLAVAN_COMPONENTS:
                         continue
                     else:
-                        print(item.name)
-                        stats = self.calcul_benef(item.name)
-                        if stats["DAY_PROFIT_WEEK"] == "ERROR WITH MARKET DATA":
-                            continue
-                        industry_dict[item.name] = stats
+                        self.get_stats(item.name)
+
+    def read_reaction(self):
+        """list all reactions selected items"""
 
         for reaction in self.data["reaction"]:
             items = Item.objects.filter(group_belong__name=reaction)
             for item in items:
-                print(item.name)
-                stats = self.calcul_benef(item.name)
-                if stats["DAY_PROFIT_WEEK"] == "ERROR WITH MARKET DATA":
-                    continue
-                industry_dict[item.name] = stats
+                self.get_stats(item.name)
+
+    def read_items(self):
+        """list all items selected"""
 
         for category in self.data["items"]:
             if category == "Subcap":
@@ -57,11 +56,7 @@ class Services():
                             #filter T2 ships
                                 continue
                             else:
-                                print(item.name)
-                                stats = self.calcul_benef(item.name)
-                                if stats["DAY_PROFIT_WEEK"] == "ERROR WITH MARKET DATA":
-                                    continue
-                                industry_dict[item.name] = stats
+                                self.get_stats(item.name)
                         except ObjectDoesNotExist:
                             pass
                     else:
@@ -73,17 +68,11 @@ class Services():
                         try:
                             bp = item.result.get()
                             if int(bp.time_prod) < 500:
-                            #filter special edition ships
                                 continue
                             if bp.tech_2:
-                            #filter T2 ships
                                 continue
                             else:
-                                print(item.name)
-                                stats = self.calcul_benef(item.name)
-                                if stats["DAY_PROFIT_WEEK"] == "ERROR WITH MARKET DATA":
-                                    continue
-                                industry_dict[item.name] = stats
+                                self.get_stats(item.name)
                         except ObjectDoesNotExist:
                             pass
                     else:
@@ -94,195 +83,36 @@ class Services():
                     try:
                         bp = item.result.get()
                         if bp.tech_2:
-                            print(item.name)
-                            stats = self.calcul_benef(item.name)
-                            if stats["DAY_PROFIT_WEEK"] == "ERROR WITH MARKET DATA":
-                                continue
-                            industry_dict[item.name] = stats
+                            self.get_stats(item.name)
                     except ObjectDoesNotExist:
                         pass
 
-        return industry_dict
+    def get_stats(self, name):
+        """save item's stats"""
 
-        
-    def show_info(self, data):
+        loaded = self.load_data(name)
+        calculator = Calculator(loaded["blueprint"], loaded["runs_per_day"])
+        stats = calculator.give_benef(loaded["components"])
+        if stats["DAY_PROFIT_WEEK"] != "ERROR WITH MARKET DATA":
+            self.industry_dict[name] = stats
 
-        self.data = data["form"].cleaned_data
-        self.t2_ME = 1
-        self.t2_TE = 0.96
-        self.cost_index = 1.015
+    def load_data(self, name):
+        """read blueprint to prepare some datas"""
 
-        info = self.info_detail(data["item"])
-        return info
-   
-
-    def info_detail(self, name):
-
-        bp = Blueprint.objects.get(items_produced__name=name)
-        data = self.item_data(bp)
-        print(data)
-        product = bp.items_produced
-        bp_run_day = 86400 / ( bp.time_prod * float(self.data["TE"]) )
-        
-        compo_value_week0 = 0
-        compo_value_week1 = 0
-        compo_value_month0 = 0
-        compo_value_month1 = 0
-
-        try:
-            for key, value in data.items():
-                item = Item.objects.get(name=key)
-                price = float(item.week0_value) * float(value)
-                compo_value_week0 += price
-                price = float(item.week1_value) * float(value)
-                compo_value_week1 += price
-                price = float(item.month0_value) * float(value)
-                compo_value_month0 += price
-                price = float(item.month1_value) * float(value)
-                compo_value_month1 += price
-        except TypeError:
-            # MARKET DATA ERROR USUALLY ITEM NOT IN MARKET
-            pass
-        try:
-            week0_benef = float(product.week0_value) * 0.95 - ( compo_value_week0 * self.cost_index )
-            day_profit_week0 = ( week0_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            week0_benef = 0.00
-            day_profit_week0 = "ERROR WITH MARKET DATA"
-        try:
-            week1_benef = float(product.week1_value) * 0.95 - compo_value_week1 * self.cost_index
-            day_profit_week1 = ( week1_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            day_profit_week1 = "ERROR WITH MARKET DATA"
-            
-        try:
-            month0_benef = float(product.month0_value) * 0.95 - compo_value_month0 * self.cost_index
-            day_profit_month0 = ( month0_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            day_profit_month0 = "ERROR WITH MARKET DATA"           
-        try:
-            month1_benef = float(product.month1_value) * 0.95 - compo_value_month1 * self.cost_index
-            day_profit_month1 = ( month1_benef * bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            day_profit_month1 = "ERROR WITH MARKET DATA"  
-        
-        
-        if day_profit_week0 == "ERROR WITH MARKET DATA" or day_profit_week1 == "ERROR WITH MARKET DATA":
-            week_progress = 0
-            compo_week_progress = 0
-            product_progress_week = 0
-            volume_progress_week = 0
-        else:
-            week_progress = ( ( day_profit_week0 * 100 ) / day_profit_week1 ) - 100
-            compo_week_progress = compo_value_week0 * 100 / compo_value_week1 - 100
-            product_progress_week = product.week0_value * 100 / product.week1_value - 100
-            volume_progress_week = product.week0_quantity * 100 / product.week1_quantity - 100
-        
-        if day_profit_month0 == "ERROR WITH MARKET DATA" or day_profit_month1 == "ERROR WITH MARKET DATA":
-            month_progress = 0
-            compo_month_progress = 0
-            product_progress_month = 0
-            volume_progress_month = 0
-        else:
-            month_progress = ( (day_profit_month0 * 100 ) / day_profit_month1 ) - 100
-            compo_month_progress = compo_value_month0 * 100 / compo_value_month1 - 100
-            product_progress_month = product.month0_value * 100 / product.month1_value - 100
-            volume_progress_month = product.month0_quantity * 100 / product.month1_quantity - 100
-            
-        info = {
-            "DAY_PROFIT_WEEK": day_profit_week0,
-            "DAY_PROFIT_MONTH": day_profit_month0,
-            "DAY_PROFIT_WEEK_PROGRESS": week_progress,
-            "DAY_PROFIT_MONTH_PROGRESS": month_progress,
-            "VOLUME": product.month0_quantity,
-            "RUNS_DAY": bp_run_day * bp.quantity_produced,
-            "compo_value_week": compo_value_week0,
-            "compo_value_month": compo_value_month0,
-            "compo_progress_week": compo_week_progress,
-            "compo_progress_month": compo_month_progress,
-            "product_value_week": product.week0_value,
-            "product_value_month": product.month0_value,
-            "product_progress_week": product_progress_week,
-            "product_progress_month": product_progress_month,
-            "product_volume_week": product.week0_quantity,
-            "product_volume_month": product.month0_quantity,
-            "volume_progress_week": volume_progress_week,
-            "volume_progress_month": volume_progress_month,
-            "list_components" : data,
-            "item_selected": name
+        blueprint = Blueprint.objects.get(items_produced__name=name)
+        components = self.item_data(blueprint)
+        if blueprint.tech_2:
+            compo_researched = self.invention_data(blueprint, components)
+            if compo_researched != "Error with market":
+                components = compo_researched
+        return {
+            "runs_per_day": 86400 / ( blueprint.time_prod * float(self.data["TE"]) ),
+            "blueprint": blueprint,
+            "components": components
         }
-        return info
-
-    def calcul_benef(self, research):
-
-        research_bp = Blueprint.objects.get(items_produced__name=research)
-        data = self.item_data(research_bp)
-        product = research_bp.items_produced
-        bp_run_day = 86400 / ( research_bp.time_prod * float(self.data["TE"]) )
-        week0 = 0
-        week1 = 0
-        month0 = 0
-        month1 = 0
-
-        try:
-            for key, value in data.items():
-                item = Item.objects.get(name=key)
-                price = float(item.week0_value) * float(value)
-                week0 += price
-                price = float(item.week1_value) * float(value)
-                week1 += price
-                price = float(item.month0_value) * float(value)
-                month0 += price
-                price = float(item.month1_value) * float(value)
-                month1 += price
-        except TypeError:
-            # MARKET DATA ERROR USUALLY ITEM NOT IN MARKET
-            pass
-        try:
-            week0_benef = float(product.week0_value) * 0.95 - ( week0 * self.cost_index )
-            day_profit_week0 = ( week0_benef * research_bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            week0_benef = 0.00
-            day_profit_week0 = "ERROR WITH MARKET DATA"
-        try:
-            week1_benef = float(product.week1_value) * 0.95 - week1 * self.cost_index
-            day_profit_week1 = ( week1_benef * research_bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            day_profit_week1 = "ERROR WITH MARKET DATA"
-            
-        try:
-            month0_benef = float(product.month0_value) * 0.95- month0 * self.cost_index
-            day_profit_month0 = ( month0_benef * research_bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            day_profit_month0 = "ERROR WITH MARKET DATA"           
-        try:
-            month1_benef = float(product.month1_value) * 0.95 - month1 * self.cost_index
-            day_profit_month1 = ( month1_benef * research_bp.quantity_produced ) * bp_run_day
-        except TypeError:
-            day_profit_month1 = "ERROR WITH MARKET DATA"  
-        
-        if day_profit_week0 == "ERROR WITH MARKET DATA" or day_profit_week1 == "ERROR WITH MARKET DATA":
-            week_progress = "ERROR WITH MARKET DATA"
-        else:
-            week_progress = ( ( day_profit_week0 * 100 ) / day_profit_week1 ) - 100
-        if day_profit_month0 == "ERROR WITH MARKET DATA" or day_profit_month1 == "ERROR WITH MARKET DATA":
-            month_progress = "ERROR WITH MARKET DATA"
-        else:
-            month_progress = ( (day_profit_month0 * 100 ) / day_profit_month1 ) - 100
-        
-        stats = {
-            "DAY_PROFIT_WEEK": day_profit_week0,
-            "DAY_PROFIT_MONTH": day_profit_month0,
-            "day_profit_week_progress": week_progress,
-            "day_profit_month_progress": month_progress,
-            "volume": product.month0_quantity,
-            "runs_day": bp_run_day * research_bp.quantity_produced
-        }
-        return stats
-
 
     def item_data(self, bp):
-        
+        """get components depending on arborescence"""
         data = self.prod_data(bp)
         if self.data["arborescence"] == '0':
             return data
@@ -292,18 +122,13 @@ class Services():
             return data
 
     def prod_data(self, bp):
-    
+        """return components's list"""
+
         data = {}
-        # if error
-        # print(item)
-        if bp.tech_2:
-            datacore = self.invention_data(bp)
-            for key, value in datacore.items():
-                data[key] = value
         for item in bp.items_needed.all():
             if bp.tech_2:
                 composants = InputProduction.objects.get(items=item, blueprints=bp)
-                data[item.name] = ( composants.quantity * self.t2_ME * float(self.data["item_t2_structures"]) * float(self.data["item_t2_rigg"]) ) / bp.quantity_produced
+                data[item.name] = ( composants.quantity * 0.98 * float(self.data["item_t2_structures"]) * float(self.data["item_t2_rigg"]) ) / bp.quantity_produced
             elif bp.reaction:
                 composants = InputProduction.objects.get(items=item, blueprints=bp)
                 data[item.name] = ( composants.quantity * float(self.data["reaction_structures"]) * float(self.data["reaction_rigg"]) ) / bp.quantity_produced
@@ -312,51 +137,38 @@ class Services():
                 data[item.name] = ( ( composants.quantity * float(self.data["ME"]) * float(self.data["item_t1_structures"]) * float(self.data["item_t1_rigg"]) ) / bp.quantity_produced )
         return data
 
-    def invention_data(self, bp):
-        
-        # success_chance = BASE * ( 1 + ( Skill 1 + Skill 2 ) / 30 + Racial Skill / 40 ) * ( 1 + Decryptor / 100)
-        data = {}
-        bp_invention = Invention.objects.get(output_blueprint__name=bp.name)
-        chance = float(bp_invention.succes_rate) * ( 1 + (( int(self.data["science1"]) + int(self.data["science2"]) ) / 30 ) + int(self.data['encryption']) / 40 ) * ( 1 + 0 / 100 )
-        datacore = InputInvention.objects.filter(inventions=bp_invention)
-        for core in datacore:
-            #print(core.items.name, core.quantity, ">>>>", (core.quantity / chance))
-            data[core.items.name] = ( core.quantity / chance ) / bp.quantity_produced
-        return data
-
-
-    def check_material_only(self, data):
-
-        for key in data.keys():
+    def check_material_only(self, compo):
+        """verify if item can be craft"""
+        for key in compo.keys():
             item = Item.objects.get(name=key)
             if item.group_belong.name == "Fuel Block":
                 if self.data["fuel_block"] == False:
                     continue  
             if self.data["arborescence"] == '1':
                 if item.group_belong.name in FROM_REACTION:
-                    pass
-                else:
-                    try:
-                        Blueprint.objects.get(items_produced__name=key)
-                        return False
-                    except ObjectDoesNotExist:
-                        pass
-            else:
-                try:
-                    Blueprint.objects.get(items_produced__name=key)
-                    return False
-                except ObjectDoesNotExist:
-                    pass
+                    continue
+            try:
+                Blueprint.objects.get(items_produced__name=key)
+                return False
+            except ObjectDoesNotExist:
+                pass
         return True
 
     def craft_detail(self, data):
-
+        """add components on components dict"""
         detail = {}
         for key, value in data.items():
             item = Item.objects.get(name=key)
             if item.group_belong.name == "Fuel Block":
                 if self.data["fuel_block"] == False:
-                    continue  
+                    continue
+            if self.data["arborescence"] == '1':
+                if item.group_belong.name in FROM_REACTION:
+                    if key in detail:
+                        detail[key] = detail[key] + value
+                    else:
+                        detail[key] = value
+                    continue
             try:
                 bp = Blueprint.objects.get(items_produced__name=key)
                 craft = self.prod_data(bp)
@@ -371,3 +183,89 @@ class Services():
                 else:
                     detail[key] = value
         return detail
+
+    def invention_data(self, bp, compo):
+        """simulate components depending on decryptor"""
+
+        bp_data = self.get_bp_data(bp, compo)
+        if bp_data == "Error with market":
+            return bp_data
+        decryptor_data = self.without_decryptor(bp_data)
+        if self.data["decryptor"] == "0":
+            for decryptor in DECRYPTORS_LIST:
+                with_decryptor = self.decryptor_bonus(bp_data, decryptor)
+                if with_decryptor["total"] < decryptor_data["total"]:
+                    decryptor_data = with_decryptor
+        return decryptor_data["composants"]
+
+    def get_bp_data(self, bp, compo):
+        """init invention data + components data"""
+        input_value = 0
+        for key, value in compo.items():
+            try:
+                item = Item.objects.get(name=key)
+                if item.week0_value is None:
+                    return "Error with market"
+                else:
+                    input_value += float(item.week0_value) * float(value)
+            except ObjectDoesNotExist:
+                print("ERROR WITH DECRYPTOR FOR", key)
+        bp_invention = Invention.objects.get(output_blueprint=bp)
+        chance = float(bp_invention.succes_rate) * ( 1 + (( int(self.data["science1"]) + int(self.data["science2"]) ) / 30 ) + int(self.data['encryption']) / 40 )
+        datacores = InputInvention.objects.filter(inventions=bp_invention)
+        bp_data = {
+            "blueprint": bp,
+            "input_value": input_value,
+            "chance": chance,
+            "datacores": datacores,
+            "composants": compo
+        }
+        return bp_data
+
+    def without_decryptor(self, bp_data):
+        """calcul componant without decryptor"""
+
+        no_decryptor_compo = {}
+        no_decryptor_total = bp_data["input_value"]
+        for datacore in bp_data["datacores"]:
+            no_decryptor_compo[datacore.items.name] = (( datacore.quantity / bp_data["chance"] ) / bp_data["blueprint"].quantity_produced )
+            try:
+                item = Item.objects.get(name=datacore.items.name)
+                no_decryptor_total += float(item.week0_value) * float(datacore.quantity)
+            except ObjectDoesNotExist:
+                print("ERROR WITH DECRYPTOR FOR", datacore.items.name)
+        for key, value in bp_data["composants"].items():
+            no_decryptor_compo[key] = value
+        without_decryptor = {
+            "total": no_decryptor_total,
+            "composants": no_decryptor_compo
+        }
+        return without_decryptor
+
+    def decryptor_bonus(self, bp_data, decryptor_data):
+        """calcul componant with decryptor"""
+
+        total = 0
+        data = {}
+        decryptor = Item.objects.get(name=decryptor_data["Name"])
+        for core in bp_data["datacores"]:
+            data[core.items.name] = (( core.quantity / bp_data["chance"] * decryptor_data["Probability"] ) / bp_data["blueprint"].quantity_produced ) / ( 1 + decryptor_data["Add Run"])
+        for key, value in data.items():
+            try:
+                item = Item.objects.get(name=key)
+                total += float(item.week0_value) * float(value)
+            except ObjectDoesNotExist:
+                print("ERROR WITH DECRYPTOR FOR", item.name)
+        total += ( bp_data["input_value"] * (( 100 - decryptor_data["Add ME"] ) / 100 )) + float(decryptor.week0_value)
+        data[decryptor.name] = (( 1 / bp_data["chance"] * decryptor_data["Probability"] ) / bp_data["blueprint"].quantity_produced ) / ( 1 + decryptor_data["Add Run"])
+        for key, value in bp_data["composants"].items():
+            data[key] = value * (( 100 - decryptor_data["Add ME"] ) / 100 )
+        return {"total": total, "composants": data}
+
+    def show_info(self, data):
+        """main functon for info view"""
+
+        self.data = data["form"].cleaned_data
+        loaded = self.load_data(data["item"])
+        calculator = Calculator(loaded["blueprint"], loaded["runs_per_day"])
+        return calculator.give_info(loaded["components"])
