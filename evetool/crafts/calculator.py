@@ -93,7 +93,7 @@ class Calculator():
         else:
             self.stats["DAY_PROFIT_WEEK_PROGRESS"] = ( ( self.stats["DAY_PROFIT_WEEK"] * 100 ) / self.day_profit_week1 ) - 100
             self.stats["compo_progress_week"] = self.week0 * 100 / self.week1 - 100
-            self.stats["product_progress_week"] = self.item.week0_value * 100 / self.item.week1_value - 100
+            self.stats["product_progress_week"] = float(self.item.week0_value * 100 / self.item.week1_value - 100)
             self.stats["volume_progress_week"] = self.item.week0_quantity * 100 / self.item.week1_quantity - 100
         
         if self.stats["DAY_PROFIT_MONTH"] == "ERROR WITH MARKET DATA" or self.day_profit_month1 == "ERROR WITH MARKET DATA":
@@ -104,19 +104,19 @@ class Calculator():
         else:
             self.stats["DAY_PROFIT_MONTH_PROGRESS"] = ( (self.stats["DAY_PROFIT_MONTH"] * 100 ) / self.day_profit_month1 ) - 100
             self.stats["compo_progress_month"] = self.month0 * 100 / self.month1 - 100
-            self.stats["product_progress_month"] = self.item.month0_value * 100 / self.item.month1_value - 100
+            self.stats["product_progress_month"] = float(self.item.month0_value * 100 / self.item.month1_value - 100)
             self.stats["volume_progress_month"] = self.item.month0_quantity * 100 / self.item.month1_quantity - 100
 
     def more_info(self, compo):
         """add more data related to item"""
 
-        self.stats["VOLUME"] = self.item.month0_quantity
-        self.stats["RUNS_DAY"] = self.runs * self.bp.quantity_produced
-        self.stats["compo_value_week"] = self.week0
-        self.stats["compo_value_month"] = self.month0
-        self.stats["product_value_week"] = self.item.week0_value
-        self.stats["product_value_month"] = self.item.month0_value
-        self.stats["product_volume_week"] = self.item.week0_quantity
-        self.stats["product_value_month"] = self.item.month0_quantity
+        self.stats["VOLUME"] = float(self.item.month0_quantity)
+        self.stats["RUNS_DAY"] = float(self.runs * self.bp.quantity_produced)
+        self.stats["compo_value_week"] = float(self.week0)
+        self.stats["compo_value_month"] = float(self.month0)
+        self.stats["product_value_week"] = float(self.item.week0_value)
+        self.stats["product_value_month"] = float(self.item.month0_value)
+        self.stats["product_volume_week"] = float(self.item.week0_quantity)
+        self.stats["product_value_month"] = float(self.item.month0_quantity)
         self.stats["list_components"] = compo
         self.stats["item_selected"] = self.item.name

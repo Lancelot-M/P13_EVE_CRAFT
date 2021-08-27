@@ -9,6 +9,8 @@ django = "*"
 psycopg2 = "*"
 pyyaml = "*"
 gunicorn = "*"
+pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
 

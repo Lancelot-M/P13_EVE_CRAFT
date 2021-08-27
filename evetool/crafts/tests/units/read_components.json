@@ -1,0 +1,506 @@
+{
+    "Antimatter Reactor Unit": {
+        "DAY_PROFIT_MONTH": -2077469.3375999937,
+        "DAY_PROFIT_WEEK": -4001153.4431999987,
+        "day_profit_month_progress": -0.201414129681055,
+        "day_profit_week_progress": 342.4795138669486
+    },
+    "Auto-Integrity Preservation Seal": {
+        "DAY_PROFIT_MONTH": 4292853.743999999,
+        "DAY_PROFIT_WEEK": 2548536.24,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": -32.34538754087957
+    },
+    "Capital Absorption Thruster Array": {
+        "DAY_PROFIT_MONTH": 688391874.0288,
+        "DAY_PROFIT_WEEK": 1610890888.0512602,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": 93.58508292655483
+    },
+    "Capital Armor Plates": {
+        "DAY_PROFIT_MONTH": -75585561.33959998,
+        "DAY_PROFIT_WEEK": -84674279.54789998,
+        "day_profit_month_progress": -18.382798532457116,
+        "day_profit_week_progress": 29.13140444751963
+    },
+    "Capital Capacitor Battery": {
+        "DAY_PROFIT_MONTH": -35034249.115080014,
+        "DAY_PROFIT_WEEK": -36247413.33702001,
+        "day_profit_month_progress": -27.399780424763023,
+        "day_profit_week_progress": 5.825839004092572
+    },
+    "Capital Cargo Bay": {
+        "DAY_PROFIT_MONTH": -21386291.263200004,
+        "DAY_PROFIT_WEEK": -19347572.916899994,
+        "day_profit_month_progress": -30.117712447898512,
+        "day_profit_week_progress": 48.01715453114056
+    },
+    "Capital Clone Vat Bay": {
+        "DAY_PROFIT_MONTH": -127965451.2822,
+        "DAY_PROFIT_WEEK": -132183540.31140003,
+        "day_profit_month_progress": -40.19609143416947,
+        "day_profit_week_progress": 9.314039795912535
+    },
+    "Capital Computer System": {
+        "DAY_PROFIT_MONTH": -47040033.68136001,
+        "DAY_PROFIT_WEEK": -49083217.183440015,
+        "day_profit_month_progress": -15.156057678964345,
+        "day_profit_week_progress": 5.854360033608415
+    },
+    "Capital Construction Parts": {
+        "DAY_PROFIT_MONTH": 17315022.294,
+        "DAY_PROFIT_WEEK": 12786709.077900004,
+        "day_profit_month_progress": 990.0237034970128,
+        "day_profit_week_progress": -24.986831041107408
+    },
+    "Capital Corporate Hangar Bay": {
+        "DAY_PROFIT_MONTH": -46170682.86240002,
+        "DAY_PROFIT_WEEK": -44106207.54750001,
+        "day_profit_month_progress": 48.97856897204943,
+        "day_profit_week_progress": -0.7830148619954969
+    },
+    "Capital Doomsday Weapon Mount": {
+        "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
+        "DAY_PROFIT_WEEK": -184299095.39616,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": -22.288040520047815
+    },
+    "Capital Drone Bay": {
+        "DAY_PROFIT_MONTH": -32659504.119900003,
+        "DAY_PROFIT_WEEK": -36499471.51355999,
+        "day_profit_month_progress": -32.058321299212736,
+        "day_profit_week_progress": 2.838841277903242
+    },
+    "Capital Jump Bridge Array": {
+        "DAY_PROFIT_MONTH": -272301494.24898005,
+        "DAY_PROFIT_WEEK": -269769023.83169997,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": 12.86503593826987
+    },
+    "Capital Jump Drive": {
+        "DAY_PROFIT_MONTH": 5273740.014480007,
+        "DAY_PROFIT_WEEK": 24414082.65558002,
+        "day_profit_month_progress": -113.28972342466645,
+        "day_profit_week_progress": 119.67415164677107
+    },
+    "Capital Launcher Hardpoint": {
+        "DAY_PROFIT_MONTH": 9971945.462879999,
+        "DAY_PROFIT_WEEK": -21530931.36641999,
+        "day_profit_month_progress": -162.72918266095542,
+        "day_profit_week_progress": -166.46753945933267
+    },
+    "Capital Power Generator": {
+        "DAY_PROFIT_MONTH": -49551021.47628,
+        "DAY_PROFIT_WEEK": -66920875.54901999,
+        "day_profit_month_progress": -28.630297423251207,
+        "day_profit_week_progress": 49.66716952911088
+    },
+    "Capital Propulsion Engine": {
+        "DAY_PROFIT_MONTH": -50207042.792880006,
+        "DAY_PROFIT_WEEK": -46080152.41482,
+        "day_profit_month_progress": 18.606008430578413,
+        "day_profit_week_progress": -15.284925473982426
+    },
+    "Capital Radiation Conversion Unit": {
+        "DAY_PROFIT_MONTH": 398796604.05798006,
+        "DAY_PROFIT_WEEK": 451616282.77752006,
+        "day_profit_month_progress": -48.17631195331284,
+        "day_profit_week_progress": -48.006269531759415
+    },
+    "Capital Sensor Cluster": {
+        "DAY_PROFIT_MONTH": -44272711.33110002,
+        "DAY_PROFIT_WEEK": -50765501.025359996,
+        "day_profit_month_progress": -23.22938371992778,
+        "day_profit_week_progress": 17.667337983786766
+    },
+    "Capital Shield Emitter": {
+        "DAY_PROFIT_MONTH": -33100130.50595999,
+        "DAY_PROFIT_WEEK": -57494048.82443999,
+        "day_profit_month_progress": -11.60375921312459,
+        "day_profit_week_progress": 50.01697971538141
+    },
+    "Capital Ship Maintenance Bay": {
+        "DAY_PROFIT_MONTH": -62356867.449480005,
+        "DAY_PROFIT_WEEK": -59962183.72703999,
+        "day_profit_month_progress": 33.29577070606811,
+        "day_profit_week_progress": 6.104971769972778
+    },
+    "Capital Siege Array": {
+        "DAY_PROFIT_MONTH": 28660457.368080013,
+        "DAY_PROFIT_WEEK": -51241345.95221999,
+        "day_profit_month_progress": 198.91222679324625,
+        "day_profit_week_progress": 1114.3484387593237
+    },
+    "Capital Turret Hardpoint": {
+        "DAY_PROFIT_MONTH": -3611693.6899199975,
+        "DAY_PROFIT_WEEK": -46771864.108019985,
+        "day_profit_month_progress": -91.63830298164686,
+        "day_profit_week_progress": 585.1025536046874
+    },
+    "Capital Ultratidal Entropic Mounting": {
+        "DAY_PROFIT_MONTH": 297097728.18588,
+        "DAY_PROFIT_WEEK": 587152642.7449801,
+        "day_profit_month_progress": -53.087365407318494,
+        "day_profit_week_progress": 102.70964760934726
+    },
+    "Core Temperature Regulator": {
+        "DAY_PROFIT_MONTH": -18551072.822400015,
+        "DAY_PROFIT_WEEK": -42400247.666400015,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": 22.207180236395885
+    },
+    "Crystalline Carbonide Armor Plate": {
+        "DAY_PROFIT_MONTH": -6351075.302399996,
+        "DAY_PROFIT_WEEK": -5169210.048000004,
+        "day_profit_month_progress": -708.9437448825187,
+        "day_profit_week_progress": -18.39644251119887
+    },
+    "Deflection Shield Emitter": {
+        "DAY_PROFIT_MONTH": -984295.6992000053,
+        "DAY_PROFIT_WEEK": -600357.0240000011,
+        "day_profit_month_progress": 609.5207627139694,
+        "day_profit_week_progress": 388.2205831929693
+    },
+    "EM Pulse Generator": {
+        "DAY_PROFIT_MONTH": -1501383.859200001,
+        "DAY_PROFIT_WEEK": -115837.8048000019,
+        "day_profit_month_progress": -16.933754284617933,
+        "day_profit_week_progress": -79.21732883234117
+    },
+    "Electrolytic Capacitor Unit": {
+        "DAY_PROFIT_MONTH": -2783299.6224000016,
+        "DAY_PROFIT_WEEK": -830895.2063999972,
+        "day_profit_month_progress": -250.76852638703306,
+        "day_profit_week_progress": 11.966218101078667
+    },
+    "Electromechanical Interface Nexus": {
+        "DAY_PROFIT_MONTH": 15717099.830399998,
+        "DAY_PROFIT_WEEK": 4859178.105599997,
+        "day_profit_month_progress": -316.69128723987814,
+        "day_profit_week_progress": -62.87271927060256
+    },
+    "Emergent Neurovisual Interface": {
+        "DAY_PROFIT_MONTH": 222956960.0543992,
+        "DAY_PROFIT_WEEK": 973100574.8928001,
+        "day_profit_month_progress": -113.51634863785995,
+        "day_profit_week_progress": 21.520720876038197
+    },
+    "Fernite Carbide Composite Armor Plate": {
+        "DAY_PROFIT_MONTH": -5602666.060800005,
+        "DAY_PROFIT_WEEK": -1161465.8687999994,
+        "day_profit_month_progress": 16.017112351206436,
+        "day_profit_week_progress": -70.65789444964177
+    },
+    "Fullerene Intercalated Sheets": {
+        "DAY_PROFIT_MONTH": -136729806.00480014,
+        "DAY_PROFIT_WEEK": -124240319.45279999,
+        "day_profit_month_progress": 496.9212726908845,
+        "day_profit_week_progress": 27.795468197273394
+    },
+    "Fulleroferrocene Power Conduits": {
+        "DAY_PROFIT_MONTH": -33428271.5136,
+        "DAY_PROFIT_WEEK": -70558596.76320004,
+        "day_profit_month_progress": 45.73398898108442,
+        "day_profit_week_progress": -966.2440693431294
+    },
+    "Fusion Reactor Unit": {
+        "DAY_PROFIT_MONTH": -4372840.598399997,
+        "DAY_PROFIT_WEEK": -5770322.265599994,
+        "day_profit_month_progress": -0.02138644506186438,
+        "day_profit_week_progress": 40.88466695000878
+    },
+    "Fusion Thruster": {
+        "DAY_PROFIT_MONTH": -2269593.2736000046,
+        "DAY_PROFIT_WEEK": 357265.84319999954,
+        "day_profit_month_progress": -36.13399020329142,
+        "day_profit_week_progress": -148.40373084121558
+    },
+    "G-O Trigger Neurolink Conduit": {
+        "DAY_PROFIT_MONTH": -5605541.311999992,
+        "DAY_PROFIT_WEEK": -39536543.264000006,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": 245.58726982855381
+    },
+    "Gravimetric Sensor Cluster": {
+        "DAY_PROFIT_MONTH": 503108.2943999979,
+        "DAY_PROFIT_WEEK": 162365.99040000373,
+        "day_profit_month_progress": -164.1494109202776,
+        "day_profit_week_progress": -120.32382966638328
+    },
+    "Gravimetric-FTL Interlink Communicator": {
+        "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
+        "DAY_PROFIT_WEEK": 499566457.69956005,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": 0
+    },
+    "Graviton Pulse Generator": {
+        "DAY_PROFIT_MONTH": 265135.4495999997,
+        "DAY_PROFIT_WEEK": 257105.03039999795,
+        "day_profit_month_progress": -63.05643432421843,
+        "day_profit_week_progress": 37.41820105116102
+    },
+    "Graviton Reactor Unit": {
+        "DAY_PROFIT_MONTH": -5725928.620799994,
+        "DAY_PROFIT_WEEK": -4018059.503999999,
+        "day_profit_month_progress": 52.57726596276311,
+        "day_profit_week_progress": -25.692942191768324
+    },
+    "Ion Thruster": {
+        "DAY_PROFIT_MONTH": -2534664.8448000024,
+        "DAY_PROFIT_WEEK": -3677273.2223999966,
+        "day_profit_month_progress": -292.6102217193485,
+        "day_profit_week_progress": 141.77889886471914
+    },
+    "Ladar Sensor Cluster": {
+        "DAY_PROFIT_MONTH": 1066476.7296000032,
+        "DAY_PROFIT_WEEK": 545831.6544000024,
+        "day_profit_month_progress": -198.63371954423963,
+        "day_profit_week_progress": -3.9300187339745634
+    },
+    "Ladar-FTL Interlink Communicator": {
+        "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
+        "DAY_PROFIT_WEEK": 473708675.82456005,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": 0
+    },
+    "Laser Focusing Crystals": {
+        "DAY_PROFIT_MONTH": 68788.33920000074,
+        "DAY_PROFIT_WEEK": 76241.89439999918,
+        "day_profit_month_progress": -96.99444162391384,
+        "day_profit_week_progress": 22.69504860920553
+    },
+    "Life Support Backup Unit": {
+        "DAY_PROFIT_MONTH": 1493242.8960000006,
+        "DAY_PROFIT_WEEK": 709642.0319999987,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": -431.93276480772397
+    },
+    "Linear Shield Emitter": {
+        "DAY_PROFIT_MONTH": 2462658.796799996,
+        "DAY_PROFIT_WEEK": 3025518.508799999,
+        "day_profit_month_progress": 5602.028375113087,
+        "day_profit_week_progress": -57.683304120465365
+    },
+    "Magnetometric Sensor Cluster": {
+        "DAY_PROFIT_MONTH": -1052388.6912000014,
+        "DAY_PROFIT_WEEK": -1553768.1792000008,
+        "day_profit_month_progress": -12.345127468145733,
+        "day_profit_week_progress": 12.733427489802423
+    },
+    "Magpulse Thruster": {
+        "DAY_PROFIT_MONTH": -3499464.326400007,
+        "DAY_PROFIT_WEEK": -5399371.584,
+        "day_profit_month_progress": 142.89228518829654,
+        "day_profit_week_progress": 105.16971414354691
+    },
+    "Metallofullerene Plating": {
+        "DAY_PROFIT_MONTH": 6165037.468799999,
+        "DAY_PROFIT_WEEK": 282631.3776000005,
+        "day_profit_month_progress": -332.4054620089639,
+        "day_profit_week_progress": -96.30031891725386
+    },
+    "Nanoelectrical Microprocessor": {
+        "DAY_PROFIT_MONTH": -9769608.806400005,
+        "DAY_PROFIT_WEEK": -3429896.4863999924,
+        "day_profit_month_progress": 142.2405672988727,
+        "day_profit_week_progress": -63.99775362983737
+    },
+    "Nanomechanical Microprocessor": {
+        "DAY_PROFIT_MONTH": -5518657.382400007,
+        "DAY_PROFIT_WEEK": -1330998.6815999988,
+        "day_profit_month_progress": -1.8538704169015432,
+        "day_profit_week_progress": -80.99401880682473
+    },
+    "Nanowire Composites": {
+        "DAY_PROFIT_MONTH": -2508838.7760000005,
+        "DAY_PROFIT_WEEK": -2472662.9952,
+        "day_profit_month_progress": -33.59831806563322,
+        "day_profit_week_progress": 456.8239890947099
+    },
+    "Neurovisual Output Analyzer": {
+        "DAY_PROFIT_MONTH": 302525387.10720015,
+        "DAY_PROFIT_WEEK": 488393762.32799983,
+        "day_profit_month_progress": 20.673021088957327,
+        "day_profit_week_progress": -31.240450311875918
+    },
+    "Nuclear Pulse Generator": {
+        "DAY_PROFIT_MONTH": -899551.4112000021,
+        "DAY_PROFIT_WEEK": -1776723.3216000006,
+        "day_profit_month_progress": -35.81077023687294,
+        "day_profit_week_progress": 12.17986475234082
+    },
+    "Nuclear Reactor Unit": {
+        "DAY_PROFIT_MONTH": -7885661.8176,
+        "DAY_PROFIT_WEEK": -7730776.800000002,
+        "day_profit_month_progress": 7.766677081457587,
+        "day_profit_week_progress": -4.494480145480452
+    },
+    "Optimized Nano-Engines": {
+        "DAY_PROFIT_MONTH": -6757787.491200009,
+        "DAY_PROFIT_WEEK": -10243215.820800006,
+        "day_profit_month_progress": -148.04379899052918,
+        "day_profit_week_progress": -346.3507275183472
+    },
+    "Oscillator Capacitor Unit": {
+        "DAY_PROFIT_MONTH": 431169.46560000116,
+        "DAY_PROFIT_WEEK": -346806.02880000137,
+        "day_profit_month_progress": 7.197882959596527,
+        "day_profit_week_progress": -138.08791269130643
+    },
+    "Particle Accelerator Unit": {
+        "DAY_PROFIT_MONTH": 170293.99680000055,
+        "DAY_PROFIT_WEEK": 725543.2512000022,
+        "day_profit_month_progress": -67.85031576142958,
+        "day_profit_week_progress": -549.9917655485563
+    },
+    "Photon Microprocessor": {
+        "DAY_PROFIT_MONTH": -6319202.342399994,
+        "DAY_PROFIT_WEEK": -5331756.902400001,
+        "day_profit_month_progress": 2.0930948719935145,
+        "day_profit_week_progress": -2.3411666503944133
+    },
+    "Plasma Pulse Generator": {
+        "DAY_PROFIT_MONTH": -1988496.0,
+        "DAY_PROFIT_WEEK": -105865.17120000324,
+        "day_profit_month_progress": -12.93508153687307,
+        "day_profit_week_progress": -96.37831852373458
+    },
+    "Plasma Thruster": {
+        "DAY_PROFIT_MONTH": -1471826.3616000032,
+        "DAY_PROFIT_WEEK": -1413578.0159999994,
+        "day_profit_month_progress": -139.0602757060227,
+        "day_profit_week_progress": -63.31765033243618
+    },
+    "Pulse Shield Emitter": {
+        "DAY_PROFIT_MONTH": -450855.64800000144,
+        "DAY_PROFIT_WEEK": 85437.44640000444,
+        "day_profit_month_progress": -115.41658602886172,
+        "day_profit_week_progress": -89.54848087913707
+    },
+    "Quantum Microprocessor": {
+        "DAY_PROFIT_MONTH": -12665184.99839998,
+        "DAY_PROFIT_WEEK": -9849255.897599991,
+        "day_profit_month_progress": 10.201808699144053,
+        "day_profit_week_progress": -24.20529713377158
+    },
+    "R-O Trigger Neurolink Conduit": {
+        "DAY_PROFIT_MONTH": -14570293.279999986,
+        "DAY_PROFIT_WEEK": -21456534.808,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": -14.797434542395536
+    },
+    "Radar Sensor Cluster": {
+        "DAY_PROFIT_MONTH": 1464840.0576000006,
+        "DAY_PROFIT_WEEK": 1656565.1712000011,
+        "day_profit_month_progress": 75.8613202199659,
+        "day_profit_week_progress": 93.2408920020261
+    },
+    "Reconfigured Subspace Calibrator": {
+        "DAY_PROFIT_MONTH": 17460040.924799982,
+        "DAY_PROFIT_WEEK": 9063456.911999993,
+        "day_profit_month_progress": 995.9885412926569,
+        "day_profit_week_progress": -62.17855421316447
+    },
+    "Reinforced Metallofullerene Alloys": {
+        "DAY_PROFIT_MONTH": -20379226.00320004,
+        "DAY_PROFIT_WEEK": 19752390.590400003,
+        "day_profit_month_progress": 32.98622600696078,
+        "day_profit_week_progress": 324.4381296519552
+    },
+    "S-R Trigger Neurolink Conduit": {
+        "DAY_PROFIT_MONTH": -998936.0320000052,
+        "DAY_PROFIT_WEEK": -11833055.975999996,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": -20.2715039543819
+    },
+    "Scalar Capacitor Unit": {
+        "DAY_PROFIT_MONTH": -930696.9983999971,
+        "DAY_PROFIT_WEEK": -3794324.4863999966,
+        "day_profit_month_progress": -504.7923420331404,
+        "day_profit_week_progress": 894.040302327056
+    },
+    "Self-Assembling Nanolattice": {
+        "DAY_PROFIT_MONTH": 102026924.32320008,
+        "DAY_PROFIT_WEEK": 73926100.656,
+        "day_profit_month_progress": -278.4405530257884,
+        "day_profit_week_progress": -1103.1595864077094
+    },
+    "Spatial Attunement Unit": {
+        "DAY_PROFIT_MONTH": -25160110.6176,
+        "DAY_PROFIT_WEEK": -23591684.736000005,
+        "day_profit_month_progress": 0.6060072329690342,
+        "day_profit_week_progress": -2.8943412933456187
+    },
+    "Superconducting Gravimetric Amplifier": {
+        "DAY_PROFIT_MONTH": -41901845.0112,
+        "DAY_PROFIT_WEEK": -31903604.8416,
+        "day_profit_month_progress": -50.03412389810354,
+        "day_profit_week_progress": 197.0623291098754
+    },
+    "Superconducting Ladar Amplifier": {
+        "DAY_PROFIT_MONTH": -42288659.049600005,
+        "DAY_PROFIT_WEEK": 36110738.90879999,
+        "day_profit_month_progress": -79.70903288430998,
+        "day_profit_week_progress": -171.22080613754076
+    },
+    "Superconducting Magnetometric Amplifier": {
+        "DAY_PROFIT_MONTH": -37679066.58240001,
+        "DAY_PROFIT_WEEK": 7505805.9456000365,
+        "day_profit_month_progress": -65.85397724797795,
+        "day_profit_week_progress": -113.56496083313435
+    },
+    "Superconducting Radar Amplifier": {
+        "DAY_PROFIT_MONTH": -33258104.32320001,
+        "DAY_PROFIT_WEEK": -28761055.055999964,
+        "day_profit_month_progress": -58.70672547432226,
+        "day_profit_week_progress": -238.37785232260654
+    },
+    "Superconductor Rails": {
+        "DAY_PROFIT_MONTH": -1257557.9903999995,
+        "DAY_PROFIT_WEEK": -739410.0480000002,
+        "day_profit_month_progress": -295.6843263180695,
+        "day_profit_week_progress": -36.29360510271298
+    },
+    "Sustained Shield Emitter": {
+        "DAY_PROFIT_MONTH": 337938.1056000008,
+        "DAY_PROFIT_WEEK": -520367.90399999963,
+        "day_profit_month_progress": -85.45071100549772,
+        "day_profit_week_progress": -224.35435747108963
+    },
+    "Tesseract Capacitor Unit": {
+        "DAY_PROFIT_MONTH": -178103.46239999542,
+        "DAY_PROFIT_WEEK": 558601.747199995,
+        "day_profit_month_progress": -112.39986904255065,
+        "day_profit_week_progress": -331.2682982084767
+    },
+    "Thermonuclear Trigger Unit": {
+        "DAY_PROFIT_MONTH": -676415.6928000022,
+        "DAY_PROFIT_WEEK": 900457.632,
+        "day_profit_month_progress": -29.33511088806395,
+        "day_profit_week_progress": -157.3991924283762
+    },
+    "Titanium Diborite Armor Plate": {
+        "DAY_PROFIT_MONTH": -5815539.763200005,
+        "DAY_PROFIT_WEEK": -4031525.2608000003,
+        "day_profit_month_progress": 72.34296136364566,
+        "day_profit_week_progress": 17.367852801771022
+    },
+    "Tungsten Carbide Armor Plate": {
+        "DAY_PROFIT_MONTH": -6996636.748800004,
+        "DAY_PROFIT_WEEK": -8236545.523200002,
+        "day_profit_month_progress": 83.90457589047489,
+        "day_profit_week_progress": 40.64580964533923
+    },
+    "U-C Trigger Neurolink Conduit": {
+        "DAY_PROFIT_MONTH": -5201532.743999988,
+        "DAY_PROFIT_WEEK": 3765525.703999996,
+        "day_profit_month_progress": 0,
+        "day_profit_week_progress": -46.427871992748386
+    },
+    "Warfare Computation Core": {
+        "DAY_PROFIT_MONTH": -14675213.808000008,
+        "DAY_PROFIT_WEEK": -17617398.379199993,
+        "day_profit_month_progress": -35.995572345338616,
+        "day_profit_week_progress": -269.78818982684396
+    }
+}

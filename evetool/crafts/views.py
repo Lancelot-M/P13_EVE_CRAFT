@@ -11,6 +11,7 @@ def home(request):
         form = CraftForm()
         return render(request, "crafts/research.html", {"form": form})
     elif request.method == "POST":
+        # print(request.POST)
         f = CraftForm(request.POST)
         if f.is_valid():
             service = Services()
@@ -35,6 +36,5 @@ def info(request):
                 "data": data
             })
     else:
-        print("POUIC!")
         form = CraftForm()
         return render(request, "crafts/research.html", {"form": form})
