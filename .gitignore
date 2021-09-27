@@ -1,2 +1,5 @@
 *__pycache__*
 evetool/settings/production.py
+evetool/.flake8
+evetool/.coverage
+evetool/pytest.ini

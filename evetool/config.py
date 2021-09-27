@@ -3,9 +3,9 @@
 # Multiple choice list for formulaire.
 REACTIONS = [("Composite", "Composites"), ("Hybrid Polymers", "Polymer"),
              ("Molecular-Forged Materials", "Molecular")]
-COMPOSANTS = [("Protective", "Protective"), ("Construction Components",
-               "Advanced"), ("Capital Construction Components", "Capital Part"),
-              ("Hybrid Tech Components", "Subsystem")]
+COMPOSANTS = [("Protective", "Protective"), ("Construction Components", "Advanced"),
+              ("Capital Construction Components", "Capital Part"), ("Hybrid Tech Components",
+                                                                    "Subsystem")]
 ITEMS = [("Subcap", "Subcapitaux"), ("Ship", "Ships T2"), ("Capital", "Capitaux"),
          ("Module", "Modules T2"), ("Charge", "Charges T2"), ("Drone", "Drones T2")]
 
@@ -18,26 +18,30 @@ ARBORESCENCE = [(0, "From Blueprint"), (1, "From Reaction"), (2, "From Raw")]
 DECRYPTOR = [(0, "Auto"), (1, "No decryptor")]
 SKILL = [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4), (5, 5)]
 ME_LIST = [(1, 0), (0.99, 1), (0.98, 2), (0.97, 3), (0.96, 4), (0.95, 5),
-           (0.94,6), (0.93, 7), (0.92, 8), (0.91, 9), (0.90, 10)]
+           (0.94, 6), (0.93, 7), (0.92, 8), (0.91, 9), (0.90, 10)]
 TE_LIST = [(1, 0), (0.98, 2), (0.96, 4), (0.94, 6), (0.92, 8), (0.90, 10),
            (0.92, 12), (0.94, 14), (0.96, 16), (0.98, 18), (0.80, 20)]
 
 # Filter list to help in research. Attaches old data and new data.
 FROM_REACTION = ["Composite", "Hybrid Polymers", "Molecular-Forged Materials"]
-PROTECTIVE_COMPONENTS = ["Auto-Integrity Preservation Seal", "Capital Core Temperature Regulator",
-                         "Neurolink Protection Cell", "Enhanced Neurolink Protection Cell",
-                         "Core Temperature Regulator", "Genetic Lock Preserver",
-                         "Genetic Mutation Inhibiter", "Genetic Safeguard Filter", "Genetic Structure Repairer",
-                         "Life Support Backup Unit", "Neurolink Enhancer Reservoir",
-                         "Programmable Purification Membrane", "Radar-FTL Interlink Communicator",
-                         "Gravimetric-FTL Interlink Communicator", "Magnetometric-FTL Interlink Communicator",
-                         "Ladar-FTL Interlink Communicator", "U-C Trigger Neurolink Conduit",
-                         "R-O Trigger Neurolink Conduit", "S-R Trigger Neurolink Conduit",
-                         "G-O Trigger Neurolink Conduit"]
-TRIGLAVAN_COMPONENTS = ["Capital Singularity Radiation Convertor", "Capital Trinary State Processor",
-                        "Capital Zero-Point Field Manipulator", "Lattice Locked Dekaisogen", 
-                        "Radiation Absorption Thruster", "Singularity Radiation Convertor",
-                        "Trinary State Processor", "Zero-Point Field Manipulator"]
+PROTECTIVE_COMPONENTS = ["Auto-Integrity Preservation Seal", "Capital Core "
+                         "Temperature Regulator", "Neurolink Protection Cell",
+                         "Enhanced Neurolink Protection Cell", "Core Temperature "
+                         "Regulator", "Genetic Lock Preserver", "Genetic Mutation "
+                         "Inhibiter", "Genetic Safeguard Filter", "Genetic Structure "
+                         "Repairer", "Life Support Backup Unit", "Neurolink Enhancer "
+                         "Reservoir", "Programmable Purification Membrane",
+                         "Radar-FTL Interlink Communicator", "Gravimetric-FTL "
+                         "Interlink Communicator", "Magnetometric-FTL Interlink "
+                         "Communicator", "Ladar-FTL Interlink Communicator", "U-C "
+                         "Trigger Neurolink Conduit", "R-O Trigger Neurolink Conduit",
+                         "S-R Trigger Neurolink Conduit", "G-O Trigger Neurolink "
+                         "Conduit"]
+TRIGLAVAN_COMPONENTS = ["Capital Singularity Radiation Convertor", "Capital Trinary "
+                        "State Processor", "Capital Zero-Point Field Manipulator",
+                        "Lattice Locked Dekaisogen", "Radiation Absorption "
+                        "Thruster", "Singularity Radiation Convertor", "Trinary "
+                        "State Processor", "Zero-Point Field Manipulator"]
 CAPITAUX = ["Titan", "Dreadnought", "Freighter", "Supercarrier", "Carrier",
             "Force Auxiliary", "Capital Industrial Ship"]
 SUBCAP = ["Frigate", "Cruiser", "Battleship", "Industrial", "Destroyer", "Mining Barge",
@@ -45,6 +49,7 @@ SUBCAP = ["Frigate", "Cruiser", "Battleship", "Industrial", "Destroyer", "Mining
 
 # % of item input value who is added during benef calcul.
 COST_INDEX = 1.03
+MARKET_FEE = 0.90
 
 # Atual effects datas for decryptor.
 DECRYPTORS_LIST = [

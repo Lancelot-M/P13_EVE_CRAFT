@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     """categories model"""
     name = models.CharField(max_length=200, unique=True)
@@ -27,12 +28,13 @@ class Item(models.Model):
     month0_quantity = models.BigIntegerField(null=True)
     month1_quantity = models.BigIntegerField(null=True)
 
+
 class Blueprint(models.Model):
     """blueprint model"""
     name = models.CharField(max_length=200, unique=True)
     types_id = models.IntegerField(unique=True)
     group_belong = models.ForeignKey(Group, on_delete=models.CASCADE)
-    items_needed = models.ManyToManyField(Item, related_name="compo",through="InputProduction")
+    items_needed = models.ManyToManyField(Item, related_name="compo", through="InputProduction")
     items_produced = models.ForeignKey(Item, related_name="result", on_delete=models.CASCADE, null=True)
     quantity_produced = models.IntegerField(null=True)
     invention_data = models.ManyToManyField("self", through="Invention", symmetrical=False)
@@ -56,6 +58,7 @@ class InputProduction(models.Model):
     items = models.ForeignKey(Item, on_delete=models.CASCADE)
     blueprints = models.ForeignKey(Blueprint, on_delete=models.CASCADE)
     quantity = models.IntegerField()
+
 
 class InputInvention(models.Model):
     """items needed for invention"""

@@ -4,7 +4,7 @@
     "DAY_PROFIT_WEEK": 3032651.616,
     "DAY_PROFIT_WEEK_PROGRESS": 9.573618304815042,
     "RUNS_DAY": 1280.0,
-    "VOLUME": 61848.0,
+    "VOLUME": 51375.0,
     "compo_progress_month": 0.7906642996373705,
     "compo_progress_week": -8.435642506777725,
     "compo_value_month": 8651.233437500001,
@@ -16,11 +16,11 @@
         "Hydrogen Fuel Block": 0.03125,
         "Isogen": 1.875
     },
-    "product_progress_month": -0.0117287272191267,
-    "product_progress_week": -4.936955848474091,
-    "product_value_month": 61848.0,
+    "product_progress_month": -0.011728727219121993,
+    "product_progress_week": -4.936955848474085,
+    "product_value_month": 12617.11,
     "product_value_week": 11756.19,
-    "product_volume_week": 51375.0,
+    "product_volume_month": 61848.0,
     "volume_progress_month": -35.91677718832891,
     "volume_progress_week": 0.19502681618722306
 }

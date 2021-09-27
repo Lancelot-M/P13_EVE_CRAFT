@@ -11,6 +11,8 @@ pyyaml = "*"
 gunicorn = "*"
 pytest = "*"
 pytest-django = "*"
+coverage = "*"
+flake8 = "*"
 
 [dev-packages]
 

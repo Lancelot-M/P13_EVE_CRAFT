@@ -3,228 +3,232 @@
         "DAY_PROFIT_MONTH": 13330085.9632,
         "DAY_PROFIT_WEEK": 16203764.092800003,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": -13.835709835923083
-    },
-    "C3-FTM Acid": {
-        "DAY_PROFIT_MONTH": -4113633.8080000016,
-        "DAY_PROFIT_WEEK": -2206610.1120000007,
-        "day_profit_month_progress": -206.6865665839191,
-        "day_profit_week_progress": -8.516800268286303
-    },
-    "Carbon-86 Epoxy Resin": {
-        "DAY_PROFIT_MONTH": -1904604.1240000026,
-        "DAY_PROFIT_WEEK": -3082103.6960000033,
-        "day_profit_month_progress": -173.44453922554527,
-        "day_profit_week_progress": -21.702944968273158
+        "day_profit_week_progress": -13.835709835923083,
+        "runs_day": 8.0,
+        "volume": 4217.0
     },
     "Cogni-Emotive Neurolink Enhancer": {
         "DAY_PROFIT_MONTH": 14080946.894399999,
         "DAY_PROFIT_WEEK": 10004847.984000001,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": -53.21455297623284
+        "day_profit_week_progress": -53.21455297623284,
+        "runs_day": 8.0,
+        "volume": 3824.0
     },
     "Crystalline Carbonide": {
         "DAY_PROFIT_MONTH": 2220930.455999999,
         "DAY_PROFIT_WEEK": 1587008.4640000004,
         "day_profit_month_progress": 16.725027784579993,
-        "day_profit_week_progress": 37.10929950173272
+        "day_profit_week_progress": 37.10929950173272,
+        "runs_day": 8.0,
+        "volume": 38862799.0
     },
     "Fermionic Condensates": {
         "DAY_PROFIT_MONTH": -21398749.53000002,
         "DAY_PROFIT_WEEK": -16157398.989999993,
         "day_profit_month_progress": 94.74461664970138,
-        "day_profit_week_progress": -29.46810358663039
+        "day_profit_week_progress": -29.46810358663039,
+        "runs_day": 8.0,
+        "volume": 84920.0
     },
     "Fernite Carbide": {
         "DAY_PROFIT_MONTH": 3694108.2719999985,
         "DAY_PROFIT_WEEK": 1501703.9920000024,
         "day_profit_month_progress": 44.145479509865595,
-        "day_profit_week_progress": -46.83565814643451
+        "day_profit_week_progress": -46.83565814643451,
+        "runs_day": 8.0,
+        "volume": 41954934.0
     },
     "Ferrogel": {
         "DAY_PROFIT_MONTH": -1547915.1839999948,
         "DAY_PROFIT_WEEK": 7353285.838000011,
         "day_profit_month_progress": -258.9484890141754,
-        "day_profit_week_progress": -410.7335975236172
-    },
-    "Fullerene Intercalated Graphite": {
-        "DAY_PROFIT_MONTH": 1601880.4759999996,
-        "DAY_PROFIT_WEEK": 2080785.3759999997,
-        "day_profit_month_progress": -61.484855154106505,
-        "day_profit_week_progress": 14.763255572378753
+        "day_profit_week_progress": -410.7335975236172,
+        "runs_day": 8.0,
+        "volume": 388026.0
     },
     "Fullerides": {
         "DAY_PROFIT_MONTH": 4489866.897999999,
         "DAY_PROFIT_WEEK": 3356910.956,
         "day_profit_month_progress": -5.821620339156766,
-        "day_profit_week_progress": -18.448054195532748
-    },
-    "Fulleroferrocene": {
-        "DAY_PROFIT_MONTH": 2651309.6520000016,
-        "DAY_PROFIT_WEEK": 5432132.827999996,
-        "day_profit_month_progress": -56.90310229511446,
-        "day_profit_week_progress": -1.7588198416747218
+        "day_profit_week_progress": -18.448054195532748,
+        "runs_day": 8.0,
+        "volume": 6766587.0
     },
     "Goal-Orienting Neurolink Stabilizer": {
         "DAY_PROFIT_MONTH": 20211183.1384,
         "DAY_PROFIT_WEEK": 17275489.7184,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": -20.822343715289563
-    },
-    "Graphene Nanoribbons": {
-        "DAY_PROFIT_MONTH": -2148887.9240000015,
-        "DAY_PROFIT_WEEK": -2476806.1199999973,
-        "day_profit_month_progress": -3383.842262212986,
-        "day_profit_week_progress": 42.559667704181436
+        "day_profit_week_progress": -20.822343715289563,
+        "runs_day": 8.0,
+        "volume": 220.0
     },
     "Hypersynaptic Fibers": {
         "DAY_PROFIT_MONTH": -2977514.659999986,
         "DAY_PROFIT_WEEK": -2717516.054000007,
         "day_profit_month_progress": -304.807265006944,
-        "day_profit_week_progress": -24.06328350789701
+        "day_profit_week_progress": -24.06328350789701,
+        "runs_day": 8.0,
+        "volume": 564827.0
     },
     "Hypnagogic Neurolink Enhancer": {
         "DAY_PROFIT_MONTH": 12894128.334400002,
         "DAY_PROFIT_WEEK": 10816382.708800003,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": 67.57080653997292
+        "day_profit_week_progress": 67.57080653997292,
+        "runs_day": 8.0,
+        "volume": 1721.0
     },
     "Isotropic Neofullerene Alpha-3": {
         "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
         "DAY_PROFIT_WEEK": 29063715.04,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": -33.424925012626076
+        "day_profit_week_progress": -33.424925012626076,
+        "runs_day": 8.0,
+        "volume": 0
     },
     "Isotropic Neofullerene Beta-6": {
         "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
         "DAY_PROFIT_WEEK": 43444884.784,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": 30.512123382137133
+        "day_profit_week_progress": 30.512123382137133,
+        "runs_day": 8.0,
+        "volume": 0
     },
     "Isotropic Neofullerene Gamma-9": {
         "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
         "DAY_PROFIT_WEEK": 12878872.487999983,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": 0
-    },
-    "Lanthanum Metallofullerene": {
-        "DAY_PROFIT_MONTH": 1271480.9319999982,
-        "DAY_PROFIT_WEEK": -408190.7720000006,
-        "day_profit_month_progress": -71.54344769218993,
-        "day_profit_week_progress": -170.26206020619088
+        "day_profit_week_progress": 0,
+        "runs_day": 8.0,
+        "volume": 0
     },
     "Meta-Operant Neurolink Enhancer": {
         "DAY_PROFIT_MONTH": "ERROR WITH MARKET DATA",
-        "DAY_PROFIT_WEEK": 1643305817.048,
+        "DAY_PROFIT_WEEK": 466483994.0720001,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": 0
-    },
-    "Methanofullerene": {
-        "DAY_PROFIT_MONTH": 3129124.556,
-        "DAY_PROFIT_WEEK": 3032651.616,
-        "day_profit_month_progress": -2.8313790428271517,
-        "day_profit_week_progress": 9.573618304815042
+        "day_profit_week_progress": 0,
+        "runs_day": 8.0,
+        "volume": 0
     },
     "Nanotransistors": {
         "DAY_PROFIT_MONTH": 2546238.775999998,
         "DAY_PROFIT_WEEK": 4976455.455999999,
         "day_profit_month_progress": -69.68057178386252,
-        "day_profit_week_progress": 808.8384780668907
+        "day_profit_week_progress": 808.8384780668907,
+        "runs_day": 8.0,
+        "volume": 2078949.0
     },
     "Nonlinear Metamaterials": {
         "DAY_PROFIT_MONTH": 2569005.1400000053,
         "DAY_PROFIT_WEEK": 2262431.581999999,
         "day_profit_month_progress": -52.74948575569432,
-        "day_profit_week_progress": 56.89868172716146
-    },
-    "PPD Fullerene Fibers": {
-        "DAY_PROFIT_MONTH": 604778.3159999999,
-        "DAY_PROFIT_WEEK": -1020441.5040000022,
-        "day_profit_month_progress": -91.16147213225449,
-        "day_profit_week_progress": -235.49576414766034
+        "day_profit_week_progress": 56.89868172716146,
+        "runs_day": 8.0,
+        "volume": 466010.0
     },
     "Phenolic Composites": {
         "DAY_PROFIT_MONTH": 5717575.982000001,
         "DAY_PROFIT_WEEK": 5704718.263999998,
         "day_profit_month_progress": 10.673675065673336,
-        "day_profit_week_progress": -13.307024922931035
+        "day_profit_week_progress": -13.307024922931035,
+        "runs_day": 8.0,
+        "volume": 4919705.0
     },
     "Photonic Metamaterials": {
         "DAY_PROFIT_MONTH": 984599.4740000053,
         "DAY_PROFIT_WEEK": 1567226.7320000043,
         "day_profit_month_progress": -76.28950193002777,
-        "day_profit_week_progress": -382.0586191752757
+        "day_profit_week_progress": -382.0586191752757,
+        "runs_day": 8.0,
+        "volume": 662387.0
     },
     "Plasmonic Metamaterials": {
         "DAY_PROFIT_MONTH": 920532.7379999973,
         "DAY_PROFIT_WEEK": 2082206.0000000028,
         "day_profit_month_progress": -58.63128238213888,
-        "day_profit_week_progress": -173.8713847623381
+        "day_profit_week_progress": -173.8713847623381,
+        "runs_day": 8.0,
+        "volume": 444530.0
     },
     "Pressurized Oxidizers": {
         "DAY_PROFIT_MONTH": 6358388.7612,
         "DAY_PROFIT_WEEK": 2757561.3068000004,
         "day_profit_month_progress": -67.50314530980651,
-        "day_profit_week_progress": -46.66012825638697
+        "day_profit_week_progress": -46.66012825638697,
+        "runs_day": 8.0,
+        "volume": 239653.0
     },
     "Reaction-Orienting Neurolink Stabilizer": {
         "DAY_PROFIT_MONTH": 18954709.443199996,
         "DAY_PROFIT_WEEK": 6444956.292799998,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": -53.77046066441988
+        "day_profit_week_progress": -53.77046066441988,
+        "runs_day": 8.0,
+        "volume": 297.0
     },
     "Reinforced Carbon Fiber": {
         "DAY_PROFIT_MONTH": 10084955.5652,
         "DAY_PROFIT_WEEK": 8023912.478800002,
         "day_profit_month_progress": -66.99431243781831,
-        "day_profit_week_progress": -22.22958850064998
-    },
-    "Scandium Metallofullerene": {
-        "DAY_PROFIT_MONTH": 3202978.188,
-        "DAY_PROFIT_WEEK": 3156227.012,
-        "day_profit_month_progress": -48.541672308163655,
-        "day_profit_week_progress": 31.355714194433148
+        "day_profit_week_progress": -22.22958850064998,
+        "runs_day": 8.0,
+        "volume": 735284.0
     },
     "Sense-Heuristic Neurolink Enhancer": {
         "DAY_PROFIT_MONTH": 14626780.306400001,
         "DAY_PROFIT_WEEK": 25687403.150400005,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": 76.06583447896557
+        "day_profit_week_progress": 76.06583447896557,
+        "runs_day": 8.0,
+        "volume": 1640.0
     },
     "Stress-Responding Neurolink Stabilizer": {
         "DAY_PROFIT_MONTH": 25993989.5504,
         "DAY_PROFIT_WEEK": 15582926.487999996,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": 3.717146573452908
+        "day_profit_week_progress": 3.717146573452908,
+        "runs_day": 8.0,
+        "volume": 271.0
     },
     "Sylramic Fibers": {
         "DAY_PROFIT_MONTH": 3209128.804000002,
         "DAY_PROFIT_WEEK": 3649843.0200000005,
         "day_profit_month_progress": -27.426148449984993,
-        "day_profit_week_progress": 30.40163394201116
+        "day_profit_week_progress": 30.40163394201116,
+        "runs_day": 8.0,
+        "volume": 25576685.0
     },
     "Terahertz Metamaterials": {
         "DAY_PROFIT_MONTH": 3132507.2700000047,
         "DAY_PROFIT_WEEK": 3125389.4680000013,
         "day_profit_month_progress": 45.48173170187664,
-        "day_profit_week_progress": -13.278944662366044
+        "day_profit_week_progress": -13.278944662366044,
+        "runs_day": 8.0,
+        "volume": 411618.0
     },
     "Titanium Carbide": {
         "DAY_PROFIT_MONTH": 2820685.7440000023,
         "DAY_PROFIT_WEEK": 1202820.9760000005,
         "day_profit_month_progress": -28.306771573439974,
-        "day_profit_week_progress": -52.52115936500671
+        "day_profit_week_progress": -52.52115936500671,
+        "runs_day": 8.0,
+        "volume": 44922059.0
     },
     "Tungsten Carbide": {
         "DAY_PROFIT_MONTH": 2699445.552000002,
         "DAY_PROFIT_WEEK": 3682254.8400000003,
         "day_profit_month_progress": 18.666797467267713,
-        "day_profit_week_progress": 64.60084580920224
+        "day_profit_week_progress": 64.60084580920224,
+        "runs_day": 8.0,
+        "volume": 44743123.0
     },
     "Ultradian-Cycling Neurolink Stabilizer": {
         "DAY_PROFIT_MONTH": 31057139.110400002,
         "DAY_PROFIT_WEEK": 27572419.956800003,
         "day_profit_month_progress": 0,
-        "day_profit_week_progress": -15.209339975584186
+        "day_profit_week_progress": -15.209339975584186,
+        "runs_day": 8.0,
+        "volume": 207.0
     }
 }

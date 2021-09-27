@@ -1,10 +1,18 @@
 from django import forms
-from config import REACTIONS, COMPOSANTS, ITEMS, REACTION_STRUCTURES, RIGGS_PROD, RIGGS_REACTION, MANUFACTURING_STRUCTURES, ARBORESCENCE, DECRYPTOR, SKILL, ME_LIST, TE_LIST
+from config import REACTIONS, COMPOSANTS, ITEMS, REACTION_STRUCTURES, RIGGS_PROD, \
+    RIGGS_REACTION, MANUFACTURING_STRUCTURES, ARBORESCENCE, DECRYPTOR, SKILL, ME_LIST, TE_LIST
+
 
 class CraftForm(forms.Form):
-    reaction = forms.MultipleChoiceField(choices=REACTIONS, widget=forms.CheckboxSelectMultiple(attrs={'class': "form-check-input"}), required=False)
-    composant = forms.MultipleChoiceField(choices=COMPOSANTS, widget=forms.CheckboxSelectMultiple(attrs={'class': "form-check-input"}), required=False)
-    items = forms.MultipleChoiceField(choices=ITEMS, widget=forms.CheckboxSelectMultiple(attrs={'class': "form-check-input"}), required=False)
+    reaction = forms.MultipleChoiceField(choices=REACTIONS,
+                                         widget=forms.CheckboxSelectMultiple(attrs={'class': "form-check-input"}),
+                                         required=False)
+    composant = forms.MultipleChoiceField(choices=COMPOSANTS,
+                                          widget=forms.CheckboxSelectMultiple(attrs={'class': "form-check-input"}),
+                                          required=False)
+    items = forms.MultipleChoiceField(choices=ITEMS,
+                                      widget=forms.CheckboxSelectMultiple(attrs={'class': "form-check-input"}),
+                                      required=False)
     reaction_structures = forms.ChoiceField(choices=REACTION_STRUCTURES)
     reaction_rigg = forms.ChoiceField(choices=RIGGS_REACTION)
     item_t1_structures = forms.ChoiceField(choices=MANUFACTURING_STRUCTURES)

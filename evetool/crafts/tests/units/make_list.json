@@ -1,584 +1,778 @@
 {
     "Absolution": {
-        "DAY_PROFIT_MONTH": -5291074.26253228,
-        "DAY_PROFIT_WEEK": -9329414.319834994,
-        "day_profit_month_progress": -73.60300556130007,
-        "day_profit_week_progress": 7821.057111646854
+        "DAY_PROFIT_MONTH": -5232450.063439579,
+        "DAY_PROFIT_WEEK": -9264907.90450039,
+        "day_profit_month_progress": -73.83270152083064,
+        "day_profit_week_progress": 17694.62899079572,
+        "runs_day": 0.288,
+        "volume": 3.0
     },
     "Anathema": {
         "DAY_PROFIT_MONTH": -1681213.1409983987,
         "DAY_PROFIT_WEEK": -1863678.8204145597,
         "day_profit_month_progress": -4.2393321936017685,
-        "day_profit_week_progress": 21.412555886427853
+        "day_profit_week_progress": 21.412555886427853,
+        "runs_day": 0.72,
+        "volume": 45.0
     },
     "Arazu": {
-        "DAY_PROFIT_MONTH": -13304946.815345947,
-        "DAY_PROFIT_WEEK": -16429454.453224953,
-        "day_profit_month_progress": 55.90872576215642,
-        "day_profit_week_progress": 12.333355650377527
+        "DAY_PROFIT_MONTH": -13214952.496358259,
+        "DAY_PROFIT_WEEK": -16335666.293324178,
+        "day_profit_month_progress": 56.26546054929125,
+        "day_profit_week_progress": 12.400220200765574,
+        "runs_day": 0.36,
+        "volume": 18.0
     },
     "Ares": {
         "DAY_PROFIT_MONTH": -4668792.133013759,
         "DAY_PROFIT_WEEK": -4820845.926720478,
         "day_profit_month_progress": 74.08657463225225,
-        "day_profit_week_progress": -20.32570155588816
+        "day_profit_week_progress": -20.32570155588816,
+        "runs_day": 0.72,
+        "volume": 65.0
     },
     "Astarte": {
-        "DAY_PROFIT_MONTH": -21824840.423059575,
-        "DAY_PROFIT_WEEK": -25874557.310726807,
-        "day_profit_month_progress": -41.3445328022201,
-        "day_profit_week_progress": 21.913095062381302
+        "DAY_PROFIT_MONTH": -21939184.482718017,
+        "DAY_PROFIT_WEEK": -25995103.783819124,
+        "day_profit_month_progress": -41.17121659557535,
+        "day_profit_week_progress": 21.808298755292597,
+        "runs_day": 0.288,
+        "volume": 3.0
     },
     "Basilisk": {
-        "DAY_PROFIT_MONTH": -22630659.428990252,
-        "DAY_PROFIT_WEEK": -15894118.018199382,
-        "day_profit_month_progress": 31.3812187338809,
-        "day_profit_week_progress": -2.0332148012439717
+        "DAY_PROFIT_MONTH": -22540665.110002566,
+        "DAY_PROFIT_WEEK": -15800329.858298607,
+        "day_profit_month_progress": 31.446906402927368,
+        "day_profit_week_progress": -2.0550341295481616,
+        "runs_day": 0.36,
+        "volume": 23.0
     },
     "Bifrost": {
         "DAY_PROFIT_MONTH": -3320485.9741791985,
         "DAY_PROFIT_WEEK": -7710393.949691616,
         "day_profit_month_progress": 1288.347505167922,
-        "day_profit_week_progress": 84.42032405512083
+        "day_profit_week_progress": 84.42032405512083,
+        "runs_day": 0.48,
+        "volume": 38.0
     },
     "Broadsword": {
-        "DAY_PROFIT_MONTH": -47006702.59394364,
-        "DAY_PROFIT_WEEK": -39140400.24117631,
-        "day_profit_month_progress": 54.77841298081307,
-        "day_profit_week_progress": -16.60414072388201
+        "DAY_PROFIT_MONTH": -46933422.34507778,
+        "DAY_PROFIT_WEEK": -39059767.22200807,
+        "day_profit_month_progress": 54.84359782320962,
+        "day_profit_week_progress": -16.63002998307651,
+        "runs_day": 0.36,
+        "volume": 9.0
     },
     "Bustard": {
-        "DAY_PROFIT_MONTH": -13814692.84639835,
-        "DAY_PROFIT_WEEK": -11816995.28282601,
-        "day_profit_month_progress": -8.00150218101038,
-        "day_profit_week_progress": 4.721069539039405
+        "DAY_PROFIT_MONTH": -13957622.920971425,
+        "DAY_PROFIT_WEEK": -11967678.374191385,
+        "day_profit_month_progress": -7.700800218363966,
+        "day_profit_week_progress": 4.696886538536802,
+        "runs_day": 0.36,
+        "volume": 25.0
     },
     "Buzzard": {
         "DAY_PROFIT_MONTH": -1145385.2792601576,
         "DAY_PROFIT_WEEK": -407233.01354016335,
         "day_profit_month_progress": -49.85774294072538,
-        "day_profit_week_progress": -64.52282220891165
+        "day_profit_week_progress": -64.52282220891165,
+        "runs_day": 0.72,
+        "volume": 75.0
     },
     "Cerberus": {
-        "DAY_PROFIT_MONTH": -27489434.204481006,
-        "DAY_PROFIT_WEEK": -25018523.102625344,
-        "day_profit_month_progress": 49.993778686484916,
-        "day_profit_week_progress": 12.96466353330213
+        "DAY_PROFIT_MONTH": -27399439.88549332,
+        "DAY_PROFIT_WEEK": -24924734.9427246,
+        "day_profit_month_progress": 50.13410391646403,
+        "day_profit_week_progress": 13.011362300609647,
+        "runs_day": 0.36,
+        "volume": 68.0
     },
     "Cheetah": {
         "DAY_PROFIT_MONTH": -2747154.00889824,
         "DAY_PROFIT_WEEK": -802158.7116619152,
         "day_profit_month_progress": -8.891823767852046,
-        "day_profit_week_progress": -921.8904703058673
+        "day_profit_week_progress": -921.8904703058673,
+        "runs_day": 0.72,
+        "volume": 32.0
     },
     "Claw": {
         "DAY_PROFIT_MONTH": -4767927.3991987165,
         "DAY_PROFIT_WEEK": -5528021.42302608,
         "day_profit_month_progress": -13.485041255432478,
-        "day_profit_week_progress": 17.36489038304707
+        "day_profit_week_progress": 17.36489038304707,
+        "runs_day": 0.72,
+        "volume": 25.0
     },
     "Claymore": {
-        "DAY_PROFIT_MONTH": -20895035.30342458,
-        "DAY_PROFIT_WEEK": -20796723.890285905,
-        "day_profit_month_progress": -26.790527356687505,
-        "day_profit_week_progress": 8.097978833971467
+        "DAY_PROFIT_MONTH": -21009379.36308302,
+        "DAY_PROFIT_WEEK": -20917270.363378223,
+        "day_profit_month_progress": -26.607823233928045,
+        "day_profit_week_progress": 8.066102488576448,
+        "runs_day": 0.288,
+        "volume": 7.0
     },
     "Crane": {
         "DAY_PROFIT_MONTH": -4062750.735710982,
         "DAY_PROFIT_WEEK": -6669326.764660163,
         "day_profit_month_progress": -54.8586659644722,
-        "day_profit_week_progress": 9.139936869224542
+        "day_profit_week_progress": 9.139936869224542,
+        "runs_day": 0.36,
+        "volume": 24.0
     },
     "Crow": {
         "DAY_PROFIT_MONTH": -6714968.439327836,
         "DAY_PROFIT_WEEK": -4172210.971734726,
         "day_profit_month_progress": 391.90008162707926,
-        "day_profit_week_progress": -33.55733498993155
+        "day_profit_week_progress": -33.55733498993155,
+        "runs_day": 0.72,
+        "volume": 50.0
     },
     "Crusader": {
         "DAY_PROFIT_MONTH": -2019979.086987841,
         "DAY_PROFIT_WEEK": -2826198.4949448,
         "day_profit_month_progress": -41.30864963320498,
-        "day_profit_week_progress": 20.831151107264105
+        "day_profit_week_progress": 20.831151107264105,
+        "runs_day": 0.72,
+        "volume": 17.0
     },
     "Curse": {
-        "DAY_PROFIT_MONTH": -15208163.915324925,
-        "DAY_PROFIT_WEEK": -13173954.69433441,
-        "day_profit_month_progress": -10.644425582914465,
-        "day_profit_week_progress": -12.320276666896746
+        "DAY_PROFIT_MONTH": -15118169.596337238,
+        "DAY_PROFIT_WEEK": -13080166.534433633,
+        "day_profit_month_progress": -10.769115642898072,
+        "day_profit_week_progress": -12.407322709588541,
+        "runs_day": 0.36,
+        "volume": 15.0
     },
     "Damnation": {
-        "DAY_PROFIT_MONTH": -22331029.812654227,
-        "DAY_PROFIT_WEEK": -17933582.621276725,
-        "day_profit_month_progress": 103.9298589211565,
-        "day_profit_week_progress": -22.165468016742395
+        "DAY_PROFIT_MONTH": -22272405.61356151,
+        "DAY_PROFIT_WEEK": -17869076.20594212,
+        "day_profit_month_progress": 104.2916392586699,
+        "day_profit_week_progress": -22.223610098857606,
+        "runs_day": 0.288,
+        "volume": 8.0
     },
     "Deacon": {
         "DAY_PROFIT_MONTH": -2381464.536202085,
         "DAY_PROFIT_WEEK": -3451140.0361665576,
         "day_profit_month_progress": 36.25708877421738,
-        "day_profit_week_progress": 35.45781802882206
+        "day_profit_week_progress": 35.45781802882206,
+        "runs_day": 0.72,
+        "volume": 29.0
     },
     "Deimos": {
-        "DAY_PROFIT_MONTH": -14209379.348915722,
-        "DAY_PROFIT_WEEK": -15732694.275335498,
-        "day_profit_month_progress": 12.96447938752884,
-        "day_profit_week_progress": 25.374600895718856
+        "DAY_PROFIT_MONTH": -14119385.029928025,
+        "DAY_PROFIT_WEEK": -15638906.11543471,
+        "day_profit_month_progress": 12.94104224707553,
+        "day_profit_week_progress": 25.549082798688076,
+        "runs_day": 0.36,
+        "volume": 18.0
     },
     "Devoter": {
-        "DAY_PROFIT_MONTH": -30077718.184213586,
-        "DAY_PROFIT_WEEK": -25411338.918437246,
-        "day_profit_month_progress": 0.020612318621829218,
-        "day_profit_week_progress": -25.58000614801476
+        "DAY_PROFIT_MONTH": -30004437.93534771,
+        "DAY_PROFIT_WEEK": -25330705.899268992,
+        "day_profit_month_progress": -0.023229226368783884,
+        "day_profit_week_progress": -25.637258951230933,
+        "runs_day": 0.36,
+        "volume": 10.0
     },
     "Draugur": {
-        "DAY_PROFIT_MONTH": -4814054.032134762,
-        "DAY_PROFIT_WEEK": -22282166.646450203,
-        "day_profit_month_progress": -162.97523227376507,
-        "day_profit_week_progress": 71.6912050275746
+        "DAY_PROFIT_MONTH": -4729374.633445329,
+        "DAY_PROFIT_WEEK": -22188990.713189106,
+        "day_profit_month_progress": -161.3103952525557,
+        "day_profit_week_progress": 72.23295343248597,
+        "runs_day": 0.48,
+        "volume": 7.0
     },
     "Eagle": {
-        "DAY_PROFIT_MONTH": -28481679.50855733,
-        "DAY_PROFIT_WEEK": -20751130.97553633,
-        "day_profit_month_progress": -31.722087961003567,
-        "day_profit_week_progress": -23.295776966802137
+        "DAY_PROFIT_MONTH": -28408399.259691436,
+        "DAY_PROFIT_WEEK": -20670497.956368078,
+        "day_profit_month_progress": -31.7994825707804,
+        "day_profit_week_progress": -23.36112828879199,
+        "runs_day": 0.36,
+        "volume": 15.0
     },
     "Endurance": {
         "DAY_PROFIT_MONTH": 1065200.7011016002,
         "DAY_PROFIT_WEEK": -1857350.7783364812,
         "day_profit_month_progress": 50.21675769005614,
-        "day_profit_week_progress": 101.74936581413661
+        "day_profit_week_progress": 101.74936581413661,
+        "runs_day": 0.72,
+        "volume": 85.0
     },
     "Enyo": {
         "DAY_PROFIT_MONTH": -897739.4417264754,
         "DAY_PROFIT_WEEK": 224554.13848688273,
         "day_profit_month_progress": -74.84836684062839,
-        "day_profit_week_progress": -475.680475770806
+        "day_profit_week_progress": -475.680475770806,
+        "runs_day": 0.72,
+        "volume": 56.0
     },
     "Eos": {
-        "DAY_PROFIT_MONTH": 12012417.933635501,
-        "DAY_PROFIT_WEEK": 12285260.830447294,
-        "day_profit_month_progress": -204.3529598055067,
-        "day_profit_week_progress": 119.63621751292337
+        "DAY_PROFIT_MONTH": 11898073.87397704,
+        "DAY_PROFIT_WEEK": 12164714.357354976,
+        "day_profit_month_progress": -202.6042649375176,
+        "day_profit_week_progress": 122.13646165544887,
+        "runs_day": 0.288,
+        "volume": 12.0
     },
     "Eris": {
         "DAY_PROFIT_MONTH": -715850.738821317,
         "DAY_PROFIT_WEEK": -1214470.3985420035,
         "day_profit_month_progress": 373.21034155989014,
-        "day_profit_week_progress": -7421.054318902826
+        "day_profit_week_progress": -7421.054318902826,
+        "runs_day": 0.48,
+        "volume": 23.0
     },
     "Falcon": {
-        "DAY_PROFIT_MONTH": -21427197.259631906,
-        "DAY_PROFIT_WEEK": -14256687.608579153,
-        "day_profit_month_progress": 6.085734040030516,
-        "day_profit_week_progress": -18.109539903581407
+        "DAY_PROFIT_MONTH": -21570127.334205,
+        "DAY_PROFIT_WEEK": -14407370.699944528,
+        "day_profit_month_progress": 6.236194830064775,
+        "day_profit_week_progress": -17.93473176135882,
+        "runs_day": 0.36,
+        "volume": 16.0
     },
     "Flycatcher": {
         "DAY_PROFIT_MONTH": -3440778.539274695,
         "DAY_PROFIT_WEEK": -5942001.885739839,
         "day_profit_month_progress": 2.4580172863906853,
-        "day_profit_week_progress": 112.54187086043149
+        "day_profit_week_progress": 112.54187086043149,
+        "runs_day": 0.48,
+        "volume": 38.0
     },
     "Golem": {
-        "DAY_PROFIT_MONTH": -67876543.12367225,
-        "DAY_PROFIT_WEEK": -56705596.46390339,
-        "day_profit_month_progress": -9.866113334114203,
-        "day_profit_week_progress": -17.657689848257945
+        "DAY_PROFIT_MONTH": -67989154.6975783,
+        "DAY_PROFIT_WEEK": -56824316.47528221,
+        "day_profit_month_progress": -9.816526853129474,
+        "day_profit_week_progress": -17.623393805198162,
+        "runs_day": 0.24,
+        "volume": 30.0
     },
     "Guardian": {
-        "DAY_PROFIT_MONTH": -17124010.00145923,
-        "DAY_PROFIT_WEEK": -16560704.91697115,
-        "day_profit_month_progress": 44.150977531573915,
-        "day_profit_week_progress": 29.00907398183736
+        "DAY_PROFIT_MONTH": -17050729.752593353,
+        "DAY_PROFIT_WEEK": -16480071.897802906,
+        "day_profit_month_progress": 44.26409495182952,
+        "day_profit_week_progress": 29.207734063101384,
+        "runs_day": 0.36,
+        "volume": 33.0
     },
     "Harpy": {
         "DAY_PROFIT_MONTH": -1885480.26239147,
         "DAY_PROFIT_WEEK": -4530138.290891886,
         "day_profit_month_progress": -45.71642350537222,
-        "day_profit_week_progress": 216.63132326274535
+        "day_profit_week_progress": 216.63132326274535,
+        "runs_day": 0.72,
+        "volume": 57.0
     },
     "Hawk": {
         "DAY_PROFIT_MONTH": -2618530.7803267282,
         "DAY_PROFIT_WEEK": -2453613.4204401057,
         "day_profit_month_progress": 5.803975884974264,
-        "day_profit_week_progress": -28.456549060888605
+        "day_profit_week_progress": -28.456549060888605,
+        "runs_day": 0.72,
+        "volume": 118.0
     },
     "Helios": {
         "DAY_PROFIT_MONTH": -2409102.3980347244,
         "DAY_PROFIT_WEEK": -1073040.851906881,
         "day_profit_month_progress": -2219.0572894210577,
-        "day_profit_week_progress": -66.83299818494412
+        "day_profit_week_progress": -66.83299818494412,
+        "runs_day": 0.72,
+        "volume": 55.0
     },
     "Heretic": {
-        "DAY_PROFIT_MONTH": -5128482.831811859,
-        "DAY_PROFIT_WEEK": -4855953.430065579,
-        "day_profit_month_progress": 82.20503402409,
-        "day_profit_week_progress": 7.011694799870142
+        "DAY_PROFIT_MONTH": -5024489.396537189,
+        "DAY_PROFIT_WEEK": -4747576.000846918,
+        "day_profit_month_progress": 84.34329462901778,
+        "day_profit_week_progress": 7.137237194277915,
+        "runs_day": 0.48,
+        "volume": 19.0
     },
     "Hound": {
         "DAY_PROFIT_MONTH": -4388327.154120961,
         "DAY_PROFIT_WEEK": -3003403.7580811186,
         "day_profit_month_progress": 62.58536242428457,
-        "day_profit_week_progress": -6.120407318119831
+        "day_profit_week_progress": -6.120407318119831,
+        "runs_day": 0.72,
+        "volume": 75.0
     },
     "Huginn": {
-        "DAY_PROFIT_MONTH": -26812336.964158725,
-        "DAY_PROFIT_WEEK": -22077351.995420177,
-        "day_profit_month_progress": 99.38606556027818,
-        "day_profit_week_progress": -4.851999665901559
+        "DAY_PROFIT_MONTH": -26722342.645171016,
+        "DAY_PROFIT_WEEK": -21983563.83551939,
+        "day_profit_month_progress": 99.8623206209096,
+        "day_profit_week_progress": -4.878468144840383,
+        "runs_day": 0.36,
+        "volume": 17.0
     },
     "Hulk": {
-        "DAY_PROFIT_MONTH": -21002380.958481792,
-        "DAY_PROFIT_WEEK": -18417665.98298747,
-        "day_profit_month_progress": 11.596252123709519,
-        "day_profit_week_progress": -9.05551856739325
+        "DAY_PROFIT_MONTH": -20929100.709615916,
+        "DAY_PROFIT_WEEK": -18337032.963819213,
+        "day_profit_month_progress": 11.563206551267754,
+        "day_profit_week_progress": -9.084913417263621,
+        "runs_day": 0.36,
+        "volume": 37.0
     },
     "Hyena": {
         "DAY_PROFIT_MONTH": -3319772.7901276764,
         "DAY_PROFIT_WEEK": -3645006.216696961,
         "day_profit_month_progress": -11.288612741508246,
-        "day_profit_week_progress": 110.1152537156938
+        "day_profit_week_progress": 110.1152537156938,
+        "runs_day": 0.72,
+        "volume": 13.0
     },
     "Ikitursa": {
-        "DAY_PROFIT_MONTH": 1262992.3386364174,
-        "DAY_PROFIT_WEEK": -3772049.736686797,
-        "day_profit_month_progress": -114.35745369040369,
-        "day_profit_week_progress": -619.3778556801271
+        "DAY_PROFIT_MONTH": 1336272.5875022935,
+        "DAY_PROFIT_WEEK": -3691416.71751852,
+        "day_profit_month_progress": -115.29500378383443,
+        "day_profit_week_progress": -556.6291705001374,
+        "runs_day": 0.36,
+        "volume": 15.0
     },
     "Impel": {
-        "DAY_PROFIT_MONTH": -18860626.386988424,
-        "DAY_PROFIT_WEEK": -18852122.980111446,
-        "day_profit_month_progress": 9.725345965589625,
-        "day_profit_week_progress": -16.382536397388492
+        "DAY_PROFIT_MONTH": -18770632.068000726,
+        "DAY_PROFIT_WEEK": -18758334.82021068,
+        "day_profit_month_progress": 9.693634171167673,
+        "day_profit_week_progress": -16.457097372800988,
+        "runs_day": 0.36,
+        "volume": 12.0
     },
     "Ishkur": {
         "DAY_PROFIT_MONTH": -2212055.5226887846,
         "DAY_PROFIT_WEEK": -691664.141653195,
         "day_profit_month_progress": -72.0909270751646,
-        "day_profit_week_progress": -69.80605282259943
+        "day_profit_week_progress": -69.80605282259943,
+        "runs_day": 0.72,
+        "volume": 29.0
     },
     "Ishtar": {
-        "DAY_PROFIT_MONTH": -13505650.02436524,
-        "DAY_PROFIT_WEEK": -19145630.418310042,
-        "day_profit_month_progress": 21.308916932926678,
-        "day_profit_week_progress": 53.75398306222223
+        "DAY_PROFIT_MONTH": -13415655.705377532,
+        "DAY_PROFIT_WEEK": -19051842.258409265,
+        "day_profit_month_progress": 21.340584621797092,
+        "day_profit_week_progress": 54.14139017029407,
+        "runs_day": 0.36,
+        "volume": 97.0
     },
     "Jaguar": {
         "DAY_PROFIT_MONTH": -3208692.4996397234,
         "DAY_PROFIT_WEEK": -3513649.1872273036,
         "day_profit_month_progress": -12.202058925928526,
-        "day_profit_week_progress": 34.408834523075654
+        "day_profit_week_progress": 34.408834523075654,
+        "runs_day": 0.72,
+        "volume": 45.0
     },
     "Keres": {
         "DAY_PROFIT_MONTH": -2371759.9164984003,
         "DAY_PROFIT_WEEK": -2511926.8010870414,
         "day_profit_month_progress": 22.892417799900386,
-        "day_profit_week_progress": 12.647855532431635
+        "day_profit_week_progress": 12.647855532431635,
+        "runs_day": 0.72,
+        "volume": 21.0
     },
     "Kirin": {
         "DAY_PROFIT_MONTH": -2921273.0212368006,
         "DAY_PROFIT_WEEK": -4189727.188248958,
         "day_profit_month_progress": -260.7099088851924,
-        "day_profit_week_progress": -12.026783593421356
+        "day_profit_week_progress": -12.026783593421356,
+        "runs_day": 0.72,
+        "volume": 33.0
     },
     "Kitsune": {
         "DAY_PROFIT_MONTH": -6670063.856357277,
         "DAY_PROFIT_WEEK": -6982193.182431845,
         "day_profit_month_progress": 114.73839693028458,
-        "day_profit_week_progress": -5.933628537032263
+        "day_profit_week_progress": -5.933628537032263,
+        "runs_day": 0.72,
+        "volume": 20.0
     },
     "Kronos": {
-        "DAY_PROFIT_MONTH": -45848093.18261089,
-        "DAY_PROFIT_WEEK": -57320680.009517096,
-        "day_profit_month_progress": 53.84273965794034,
-        "day_profit_week_progress": 0.8468720814847899
+        "DAY_PROFIT_MONTH": -45960704.75651693,
+        "DAY_PROFIT_WEEK": -57439400.0208958,
+        "day_profit_month_progress": 53.78990399011522,
+        "day_profit_week_progress": 0.8509011178763473,
+        "runs_day": 0.24,
+        "volume": 14.0
     },
     "Lachesis": {
-        "DAY_PROFIT_MONTH": -13168533.657032818,
-        "DAY_PROFIT_WEEK": -12434807.65332526,
-        "day_profit_month_progress": 12.271075874206687,
-        "day_profit_week_progress": -13.747952589716505
+        "DAY_PROFIT_MONTH": -13078539.338045131,
+        "DAY_PROFIT_WEEK": -12341019.493424485,
+        "day_profit_month_progress": 12.241343797913927,
+        "day_profit_week_progress": -13.847878165654905,
+        "runs_day": 0.36,
+        "volume": 14.0
     },
     "Mackinaw": {
-        "DAY_PROFIT_MONTH": -30460125.024177488,
-        "DAY_PROFIT_WEEK": -28212725.911697745,
-        "day_profit_month_progress": -5.66537937065732,
-        "day_profit_week_progress": -10.065062650598193
+        "DAY_PROFIT_MONTH": -30386844.77531161,
+        "DAY_PROFIT_WEEK": -28132092.892529488,
+        "day_profit_month_progress": -5.716808721980243,
+        "day_profit_week_progress": -10.086662086600967,
+        "runs_day": 0.36,
+        "volume": 18.0
     },
     "Magus": {
         "DAY_PROFIT_MONTH": -5224637.196622853,
         "DAY_PROFIT_WEEK": -3916254.4752469608,
         "day_profit_month_progress": -14.529570561376786,
-        "day_profit_week_progress": -10.666945338549013
+        "day_profit_week_progress": -10.666945338549013,
+        "runs_day": 0.48,
+        "volume": 16.0
     },
     "Malediction": {
         "DAY_PROFIT_MONTH": -4542479.155947841,
         "DAY_PROFIT_WEEK": -4582229.732944801,
         "day_profit_month_progress": 864.7780243540149,
-        "day_profit_week_progress": -9.894676460477612
+        "day_profit_week_progress": -9.894676460477612,
+        "runs_day": 0.72,
+        "volume": 103.0
     },
     "Manticore": {
         "DAY_PROFIT_MONTH": -4007062.954041117,
         "DAY_PROFIT_WEEK": -4103924.735802242,
         "day_profit_month_progress": 75.6467256811427,
-        "day_profit_week_progress": 6.720964362466475
+        "day_profit_week_progress": 6.720964362466475,
+        "runs_day": 0.72,
+        "volume": 68.0
     },
     "Mastodon": {
-        "DAY_PROFIT_MONTH": -17748294.93233967,
-        "DAY_PROFIT_WEEK": -18183725.950150095,
-        "day_profit_month_progress": 724.227149725866,
-        "day_profit_week_progress": -2.559129363676277
+        "DAY_PROFIT_MONTH": -17658300.61335196,
+        "DAY_PROFIT_WEEK": -18089937.79024933,
+        "day_profit_month_progress": 750.488704772433,
+        "day_profit_week_progress": -2.580694415488722,
+        "runs_day": 0.36,
+        "volume": 13.0
     },
     "Muninn": {
-        "DAY_PROFIT_MONTH": -18720039.59990387,
-        "DAY_PROFIT_WEEK": -25287662.47073134,
-        "day_profit_month_progress": 15.4035358854359,
-        "day_profit_week_progress": 26.100480126166318
+        "DAY_PROFIT_MONTH": -18646759.351038013,
+        "DAY_PROFIT_WEEK": -25207029.451563083,
+        "day_profit_month_progress": 15.379337718148022,
+        "day_profit_week_progress": 26.215390825475723,
+        "runs_day": 0.36,
+        "volume": 28.0
     },
     "Nemesis": {
         "DAY_PROFIT_MONTH": -2832335.8105353587,
         "DAY_PROFIT_WEEK": -2986971.2965444806,
         "day_profit_month_progress": 65.89722024704906,
-        "day_profit_week_progress": -7.118337941209802
+        "day_profit_week_progress": -7.118337941209802,
+        "runs_day": 0.72,
+        "volume": 55.0
     },
     "Nergal": {
-        "DAY_PROFIT_MONTH": 10467364.664629998,
-        "DAY_PROFIT_WEEK": 6941994.151670837,
-        "day_profit_month_progress": -36.72149406535031,
-        "day_profit_week_progress": 90.30309702053242
+        "DAY_PROFIT_MONTH": 10594383.762664167,
+        "DAY_PROFIT_WEEK": 7081758.051562485,
+        "day_profit_month_progress": -36.3545072285446,
+        "day_profit_week_progress": 86.84181607975296,
+        "runs_day": 0.72,
+        "volume": 22.0
     },
     "Nighthawk": {
-        "DAY_PROFIT_MONTH": -8279229.62124064,
-        "DAY_PROFIT_WEEK": -176343.05348696708,
-        "day_profit_month_progress": -23.646941867415165,
-        "day_profit_week_progress": -345.10185348004313
+        "DAY_PROFIT_MONTH": -8393573.680899084,
+        "DAY_PROFIT_WEEK": -296889.52657928463,
+        "day_profit_month_progress": -23.192726268536717,
+        "day_profit_week_progress": 555.7202197603697,
+        "runs_day": 0.288,
+        "volume": 7.0
     },
     "Occator": {
-        "DAY_PROFIT_MONTH": -11219426.64458162,
-        "DAY_PROFIT_WEEK": -15325241.76342075,
-        "day_profit_month_progress": 5.259773591696515,
-        "day_profit_week_progress": 17.644115855297187
+        "DAY_PROFIT_MONTH": -11129432.325593933,
+        "DAY_PROFIT_WEEK": -15231453.603519984,
+        "day_profit_month_progress": 5.175966845889818,
+        "day_profit_week_progress": 17.757077444830685,
+        "runs_day": 0.36,
+        "volume": 38.0
     },
     "Oneiros": {
-        "DAY_PROFIT_MONTH": -6844092.975263532,
-        "DAY_PROFIT_WEEK": -9207263.951632973,
-        "day_profit_month_progress": -15.300715289325197,
-        "day_profit_week_progress": 8.62223538783067
+        "DAY_PROFIT_MONTH": -6754098.656275845,
+        "DAY_PROFIT_WEEK": -9113475.791732196,
+        "day_profit_month_progress": -15.609517467648331,
+        "day_profit_week_progress": 8.69735534091653,
+        "runs_day": 0.36,
+        "volume": 13.0
     },
     "Onyx": {
-        "DAY_PROFIT_MONTH": -51048859.214151576,
-        "DAY_PROFIT_WEEK": -42574549.51754847,
-        "day_profit_month_progress": -2.2424361359386467,
-        "day_profit_week_progress": -6.03531828763677
+        "DAY_PROFIT_MONTH": -50975578.9652857,
+        "DAY_PROFIT_WEEK": -42493916.498380214,
+        "day_profit_month_progress": -2.270269463441821,
+        "day_profit_week_progress": -6.042941822238632,
+        "runs_day": 0.36,
+        "volume": 9.0
     },
     "Paladin": {
-        "DAY_PROFIT_MONTH": -33474590.66161503,
-        "DAY_PROFIT_WEEK": -50403395.2320615,
-        "day_profit_month_progress": 20.58963628553255,
-        "day_profit_week_progress": 7.949958173354673
+        "DAY_PROFIT_MONTH": -33416854.707963124,
+        "DAY_PROFIT_WEEK": -50339866.1866563,
+        "day_profit_month_progress": 20.587380709691104,
+        "day_profit_week_progress": 7.96354381177359,
+        "runs_day": 0.24,
+        "volume": 23.0
     },
     "Panther": {
-        "DAY_PROFIT_MONTH": -39647564.94066977,
-        "DAY_PROFIT_WEEK": -16604233.816674327,
-        "day_profit_month_progress": -6.3614357928377245,
-        "day_profit_week_progress": -224.40166007052716
+        "DAY_PROFIT_MONTH": -39760176.5145758,
+        "DAY_PROFIT_WEEK": -16722953.828053035,
+        "day_profit_month_progress": -6.280213794622725,
+        "day_profit_week_progress": -226.38429396501547,
+        "runs_day": 0.24,
+        "volume": 8.0
     },
     "Phobos": {
-        "DAY_PROFIT_MONTH": -21632837.156697635,
-        "DAY_PROFIT_WEEK": -21669288.004330616,
-        "day_profit_month_progress": -20.14198545229368,
-        "day_profit_week_progress": -1.791383731408601
+        "DAY_PROFIT_MONTH": -21559556.90783176,
+        "DAY_PROFIT_WEEK": -21588654.98516236,
+        "day_profit_month_progress": -20.235504520464772,
+        "day_profit_week_progress": -1.7912100021984259,
+        "runs_day": 0.36,
+        "volume": 7.0
     },
     "Pilgrim": {
-        "DAY_PROFIT_MONTH": -16194769.753389394,
-        "DAY_PROFIT_WEEK": -16844974.050840724,
-        "day_profit_month_progress": -18.921536733472706,
-        "day_profit_week_progress": -4.442996100581553
+        "DAY_PROFIT_MONTH": -16104775.434401708,
+        "DAY_PROFIT_WEEK": -16751185.890939971,
+        "day_profit_month_progress": -19.059774262898273,
+        "day_profit_week_progress": -4.475730232984148,
+        "runs_day": 0.36,
+        "volume": 14.0
     },
     "Pontifex": {
-        "DAY_PROFIT_MONTH": -6868392.0832054205,
-        "DAY_PROFIT_WEEK": -3978194.4065767084,
-        "day_profit_month_progress": 50.20373309896905,
-        "day_profit_week_progress": -31.762698196213663
+        "DAY_PROFIT_MONTH": -6764398.647930751,
+        "DAY_PROFIT_WEEK": -3869816.9773580465,
+        "day_profit_month_progress": 50.86792284282822,
+        "day_profit_week_progress": -32.38682754226306,
+        "runs_day": 0.48,
+        "volume": 14.0
     },
     "Prorator": {
-        "DAY_PROFIT_MONTH": -8972891.213281907,
-        "DAY_PROFIT_WEEK": -5812005.618320754,
-        "day_profit_month_progress": -12.559345634858218,
-        "day_profit_week_progress": -44.4296748238169
+        "DAY_PROFIT_MONTH": -8882896.89429421,
+        "DAY_PROFIT_WEEK": -5718217.458419977,
+        "day_profit_month_progress": -12.781266556495936,
+        "day_profit_week_progress": -44.8404588309374,
+        "runs_day": 0.36,
+        "volume": 11.0
     },
     "Prospect": {
         "DAY_PROFIT_MONTH": 513123.3570215991,
         "DAY_PROFIT_WEEK": -2072548.8308164787,
         "day_profit_month_progress": -65.84895514652948,
-        "day_profit_week_progress": 93.55899944578871
+        "day_profit_week_progress": 93.55899944578871,
+        "runs_day": 0.72,
+        "volume": 134.0
     },
     "Prowler": {
         "DAY_PROFIT_MONTH": -14249221.203214992,
         "DAY_PROFIT_WEEK": -17529258.515454646,
         "day_profit_month_progress": 78.74808159141998,
-        "day_profit_week_progress": 36.91884571639622
+        "day_profit_week_progress": 36.91884571639622,
+        "runs_day": 0.36,
+        "volume": 15.0
     },
     "Purifier": {
         "DAY_PROFIT_MONTH": -1169385.354959042,
         "DAY_PROFIT_WEEK": -2893301.707986239,
         "day_profit_month_progress": 207.10438514395867,
-        "day_profit_week_progress": 31.426910070989123
+        "day_profit_week_progress": 31.426910070989123,
+        "runs_day": 0.72,
+        "volume": 79.0
     },
     "Rapier": {
-        "DAY_PROFIT_MONTH": -25184655.00709207,
-        "DAY_PROFIT_WEEK": -24989546.932998132,
-        "day_profit_month_progress": 42.26631343412822,
-        "day_profit_week_progress": 22.511909551575883
+        "DAY_PROFIT_MONTH": -25094660.68810436,
+        "DAY_PROFIT_WEEK": -24895758.773097344,
+        "day_profit_month_progress": 42.377820621951486,
+        "day_profit_week_progress": 22.60595520068665,
+        "runs_day": 0.36,
+        "volume": 17.0
     },
     "Raptor": {
         "DAY_PROFIT_MONTH": -5073099.132687836,
         "DAY_PROFIT_WEEK": -4304723.0772547275,
         "day_profit_month_progress": 1.0483829535922808,
-        "day_profit_week_progress": -21.21295627573535
+        "day_profit_week_progress": -21.21295627573535,
+        "runs_day": 0.72,
+        "volume": 19.0
     },
     "Redeemer": {
-        "DAY_PROFIT_MONTH": 6589650.563476352,
-        "DAY_PROFIT_WEEK": -5002870.7105448535,
-        "day_profit_month_progress": -124.1483408212316,
-        "day_profit_week_progress": -113.09951429636382
+        "DAY_PROFIT_MONTH": 6647386.517128257,
+        "DAY_PROFIT_WEEK": -4939341.665139541,
+        "day_profit_month_progress": -124.40227022933021,
+        "day_profit_week_progress": -112.91129054746291,
+        "runs_day": 0.24,
+        "volume": 8.0
     },
     "Retribution": {
-        "DAY_PROFIT_MONTH": -4347453.294600138,
-        "DAY_PROFIT_WEEK": -2187226.200153522,
-        "day_profit_month_progress": 54.89887995553656,
-        "day_profit_week_progress": -53.54154020063862
+        "DAY_PROFIT_MONTH": -4220434.196565952,
+        "DAY_PROFIT_WEEK": -2047462.300261885,
+        "day_profit_month_progress": 56.17076863580698,
+        "day_profit_week_progress": -55.153968781424005,
+        "runs_day": 0.72,
+        "volume": 113.0
     },
     "Rook": {
-        "DAY_PROFIT_MONTH": -24319839.530971643,
-        "DAY_PROFIT_WEEK": -9449124.856798878,
-        "day_profit_month_progress": 75.50718718465805,
-        "day_profit_week_progress": -52.941236312393585
+        "DAY_PROFIT_MONTH": -24462769.60554472,
+        "DAY_PROFIT_WEEK": -9599807.948164275,
+        "day_profit_month_progress": 75.19928888160746,
+        "day_profit_week_progress": -52.53716097379594,
+        "runs_day": 0.36,
+        "volume": 6.0
     },
     "Sabre": {
         "DAY_PROFIT_MONTH": -5164885.7380936,
         "DAY_PROFIT_WEEK": -7191962.001207923,
         "day_profit_month_progress": 124.19741870940487,
-        "day_profit_week_progress": 28.47802925965837
+        "day_profit_week_progress": 28.47802925965837,
+        "runs_day": 0.48,
+        "volume": 109.0
     },
     "Sacrilege": {
-        "DAY_PROFIT_MONTH": -18534959.191577654,
-        "DAY_PROFIT_WEEK": -24688064.90979036,
-        "day_profit_month_progress": 7.441802316365624,
-        "day_profit_week_progress": 8.738693475006329
+        "DAY_PROFIT_MONTH": -18461678.942711797,
+        "DAY_PROFIT_WEEK": -24607431.890622105,
+        "day_profit_month_progress": 7.391214607528397,
+        "day_profit_week_progress": 8.777098227507565,
+        "runs_day": 0.36,
+        "volume": 22.0
     },
     "Scalpel": {
         "DAY_PROFIT_MONTH": -5478203.041933437,
         "DAY_PROFIT_WEEK": -5386520.404922879,
         "day_profit_month_progress": -8.072222115051076,
-        "day_profit_week_progress": 21.88875443138467
+        "day_profit_week_progress": 21.88875443138467,
+        "runs_day": 0.72,
+        "volume": 9.0
     },
     "Scimitar": {
-        "DAY_PROFIT_MONTH": -19361863.725696694,
-        "DAY_PROFIT_WEEK": -22033710.33495029,
-        "day_profit_month_progress": 60.044414688214005,
-        "day_profit_week_progress": 35.51966776802129
+        "DAY_PROFIT_MONTH": -19271869.406708986,
+        "DAY_PROFIT_WEEK": -21939922.175049514,
+        "day_profit_month_progress": 60.321898386409714,
+        "day_profit_week_progress": 35.711929195442394,
+        "runs_day": 0.36,
+        "volume": 33.0
     },
     "Sentinel": {
         "DAY_PROFIT_MONTH": -2998626.538025762,
         "DAY_PROFIT_WEEK": -3721910.54277456,
         "day_profit_month_progress": 8.024967245111498,
-        "day_profit_week_progress": 26.19904401757563
+        "day_profit_week_progress": 26.19904401757563,
+        "runs_day": 0.72,
+        "volume": 10.0
     },
     "Sin": {
-        "DAY_PROFIT_MONTH": -24729860.386475373,
-        "DAY_PROFIT_WEEK": -31683961.88489187,
-        "day_profit_month_progress": -53.63252261417696,
-        "day_profit_week_progress": -285.7789123710113
+        "DAY_PROFIT_MONTH": -24842471.96038147,
+        "DAY_PROFIT_WEEK": -31802681.89627058,
+        "day_profit_month_progress": -53.494157348137634,
+        "day_profit_week_progress": -287.74592995815243,
+        "runs_day": 0.24,
+        "volume": 8.0
     },
     "Skiff": {
-        "DAY_PROFIT_MONTH": -24873184.58626402,
-        "DAY_PROFIT_WEEK": -24132328.789017778,
-        "day_profit_month_progress": -38.19233699417005,
-        "day_profit_week_progress": 3.2337259727595864
+        "DAY_PROFIT_MONTH": -24799904.337398168,
+        "DAY_PROFIT_WEEK": -24051695.76984952,
+        "day_profit_month_progress": -38.28224472977843,
+        "day_profit_week_progress": 3.25160999706263,
+        "runs_day": 0.36,
+        "volume": 38.0
     },
     "Sleipnir": {
-        "DAY_PROFIT_MONTH": -24158831.815864824,
-        "DAY_PROFIT_WEEK": -25538422.71499916,
-        "day_profit_month_progress": -4.043355541767966,
-        "day_profit_week_progress": 31.637143130560588
+        "DAY_PROFIT_MONTH": -24273175.875523284,
+        "DAY_PROFIT_WEEK": -25658969.18809148,
+        "day_profit_month_progress": -3.912628620473143,
+        "day_profit_week_progress": 31.464155456400533,
+        "runs_day": 0.288,
+        "volume": 5.0
     },
     "Stiletto": {
         "DAY_PROFIT_MONTH": -4959441.122958716,
         "DAY_PROFIT_WEEK": -5197033.896466079,
         "day_profit_month_progress": 58.58518897030953,
-        "day_profit_week_progress": 10.313341099363868
+        "day_profit_week_progress": 10.313341099363868,
+        "runs_day": 0.72,
+        "volume": 89.0
     },
     "Stork": {
         "DAY_PROFIT_MONTH": -4057727.3466801164,
         "DAY_PROFIT_WEEK": -2371601.513106415,
         "day_profit_month_progress": -44.758257354629734,
-        "day_profit_week_progress": 15.404266065894902
+        "day_profit_week_progress": 15.404266065894902,
+        "runs_day": 0.48,
+        "volume": 14.0
     },
     "Taranis": {
         "DAY_PROFIT_MONTH": -2217784.154453759,
         "DAY_PROFIT_WEEK": -2814668.862240476,
         "day_profit_month_progress": 143.7306164972555,
-        "day_profit_week_progress": -6.800757432513862
+        "day_profit_week_progress": -6.800757432513862,
+        "runs_day": 0.72,
+        "volume": 28.0
     },
     "Thalia": {
         "DAY_PROFIT_MONTH": -3104235.19997952,
         "DAY_PROFIT_WEEK": -3839052.1037913617,
         "day_profit_month_progress": -34.03561798563061,
-        "day_profit_week_progress": 28.968563173871274
+        "day_profit_week_progress": 28.968563173871274,
+        "runs_day": 0.72,
+        "volume": 6.0
     },
     "Vagabond": {
-        "DAY_PROFIT_MONTH": -19634414.23321227,
-        "DAY_PROFIT_WEEK": -15478995.976395013,
-        "day_profit_month_progress": 52.08938674675116,
-        "day_profit_week_progress": -31.004510620298674
+        "DAY_PROFIT_MONTH": -19544419.91422456,
+        "DAY_PROFIT_WEEK": -15385207.816494226,
+        "day_profit_month_progress": 52.301535607484,
+        "day_profit_week_progress": -31.13974306957033,
+        "runs_day": 0.36,
+        "volume": 17.0
     },
     "Vargur": {
-        "DAY_PROFIT_MONTH": -45486243.866826035,
-        "DAY_PROFIT_WEEK": -42771655.60296106,
-        "day_profit_month_progress": 56.58650055144233,
-        "day_profit_week_progress": 1.465184831432154
+        "DAY_PROFIT_MONTH": -45598855.44073214,
+        "DAY_PROFIT_WEEK": -42890375.61433994,
+        "day_profit_month_progress": 56.52443785393089,
+        "day_profit_week_progress": 1.4689248862208615,
+        "runs_day": 0.24,
+        "volume": 24.0
     },
     "Vengeance": {
-        "DAY_PROFIT_MONTH": -3423140.782765236,
-        "DAY_PROFIT_WEEK": -3537616.6503533744,
-        "day_profit_month_progress": -11.965661380336115,
-        "day_profit_week_progress": -15.658009015216749
+        "DAY_PROFIT_MONTH": -3296121.6847310504,
+        "DAY_PROFIT_WEEK": -3397852.750461737,
+        "day_profit_month_progress": -12.898347533331773,
+        "day_profit_week_progress": -16.143627054139287,
+        "runs_day": 0.72,
+        "volume": 15.0
     },
     "Viator": {
         "DAY_PROFIT_MONTH": -4406313.068522934,
         "DAY_PROFIT_WEEK": -4169431.1451761234,
         "day_profit_month_progress": -26.434001762058443,
-        "day_profit_week_progress": 12.664316122898128
+        "day_profit_week_progress": 12.664316122898128,
+        "runs_day": 0.36,
+        "volume": 32.0
     },
     "Vulture": {
-        "DAY_PROFIT_MONTH": -41709275.66589361,
-        "DAY_PROFIT_WEEK": -31288046.969180886,
-        "day_profit_month_progress": -28.120181843663474,
-        "day_profit_week_progress": -2.273888671340899
+        "DAY_PROFIT_MONTH": -41823619.725552045,
+        "DAY_PROFIT_WEEK": -31408593.44227319,
+        "day_profit_month_progress": -28.028240698366858,
+        "day_profit_week_progress": -2.2552528415593684,
+        "runs_day": 0.288,
+        "volume": 3.0
     },
     "Widow": {
-        "DAY_PROFIT_MONTH": -5425541.516333484,
-        "DAY_PROFIT_WEEK": -14471652.143011665,
-        "day_profit_month_progress": -93.58723202382093,
-        "day_profit_week_progress": -145.78529810023286
+        "DAY_PROFIT_MONTH": -5538153.090239582,
+        "DAY_PROFIT_WEEK": -14590372.154390488,
+        "day_profit_month_progress": -93.46058087789662,
+        "day_profit_week_progress": -146.33012531577577,
+        "runs_day": 0.24,
+        "volume": 8.0
     },
     "Wolf": {
         "DAY_PROFIT_MONTH": -4555529.506715863,
         "DAY_PROFIT_WEEK": -3892680.453002652,
         "day_profit_month_progress": 58.46159283529792,
-        "day_profit_week_progress": -5.784412657276292
+        "day_profit_week_progress": -5.784412657276292,
+        "runs_day": 0.72,
+        "volume": 45.0
     },
     "Zarmazd": {
-        "DAY_PROFIT_MONTH": -19771431.760885734,
-        "DAY_PROFIT_WEEK": -11555231.60011528,
-        "day_profit_month_progress": -74.0199161050003,
-        "day_profit_week_progress": -25.539216312720498
+        "DAY_PROFIT_MONTH": -19698151.512019858,
+        "DAY_PROFIT_WEEK": -11474598.580947045,
+        "day_profit_month_progress": -74.09574709655732,
+        "day_profit_week_progress": -25.665339733852704,
+        "runs_day": 0.36,
+        "volume": 6.0
     },
     "Zealot": {
-        "DAY_PROFIT_MONTH": -22510078.021805007,
-        "DAY_PROFIT_WEEK": -30676757.468810473,
-        "day_profit_month_progress": -11.633352535656698,
-        "day_profit_week_progress": 21.474806632717176
+        "DAY_PROFIT_MONTH": -22436797.77293912,
+        "DAY_PROFIT_WEEK": -30596124.44964222,
+        "day_profit_month_progress": -11.71269145844468,
+        "day_profit_week_progress": 21.550883552996737,
+        "runs_day": 0.36,
+        "volume": 11.0
     }
 }
